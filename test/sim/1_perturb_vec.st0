@@ -1,0 +1,90 @@
+****** HSPICE -- K-2015.06-SP1 linux64 (Aug 23 2015) ******
+ Input File: ./sim/1_perturb_vec.sp
+ lic:
+ lic: FLEXlm: v11.2.1
+ lic: USER:   woong                HOSTNAME: vlsisys2
+ lic: HOSTID: ac1f6bdb66c4         PID:      136518
+ lic: Using FLEXlm license file:
+ lic: 27000@vlsisys2
+ lic: Checkout 1 hspice
+ lic: License/Maintenance for hspice will expire on 31-dec-2030/2019.12
+ lic: NODE LOCKED license on hostid ac1f6bdb66c4
+ lic:
+ init: begin read circuit files,  cpu clock=  5.20E-01
+       option search = /tools/synopsys/HSPICE/K-2015.06-SP1/hspice/part
+                         s/ad
+       option search = /tools/synopsys/HSPICE/K-2015.06-SP1/hspice/part
+                         s/ad
+       option search = /tools/synopsys/HSPICE/K-2015.06-SP1/hspice/part
+                         s/behave
+       option search = /tools/synopsys/HSPICE/K-2015.06-SP1/hspice/part
+                         s/bjt
+       option search = /tools/synopsys/HSPICE/K-2015.06-SP1/hspice/part
+                         s/burr_brn
+       option search = /tools/synopsys/HSPICE/K-2015.06-SP1/hspice/part
+                         s/comlinear
+       option search = /tools/synopsys/HSPICE/K-2015.06-SP1/hspice/part
+                         s/dio
+       option search = /tools/synopsys/HSPICE/K-2015.06-SP1/hspice/part
+                         s/fet
+       option search = /tools/synopsys/HSPICE/K-2015.06-SP1/hspice/part
+                         s/lin_tech
+       option search = /tools/synopsys/HSPICE/K-2015.06-SP1/hspice/part
+                         s/pci
+       option search = /tools/synopsys/HSPICE/K-2015.06-SP1/hspice/part
+                         s/signet
+       option search = /tools/synopsys/HSPICE/K-2015.06-SP1/hspice/part
+                         s/ti
+       option search = /tools/synopsys/HSPICE/K-2015.06-SP1/hspice/part
+                         s/tline
+       option search = /tools/synopsys/HSPICE/K-2015.06-SP1/hspice/part
+                         s/xilinx
+       option runlvl
+       option post
+       option probe
+       option measdgt =     6.00
+       option numdgt =     6.00
+       option ingold
+       option modmonte =     1.00
+       option mtthred =     2.00
+       option measform =     3.00
+       option mcbrief =     2.00
+       option abstol =    1.000E-06
+       option reltol =    1.000E-06
+ init: end read circuit files,  cpu clock=  6.60E-01 peak memory=       227 mb
+ init: begin check errors,  cpu clock=  6.60E-01
+ init: end check errors,  cpu clock=  7.00E-01 peak memory=       232 mb
+ init: begin setup matrix, pivot=     0 cpu clock=  7.00E-01
+       establish matrix -- done,  cpu clock=  7.00E-01 peak memory=       232 mb
+       re-order matrix -- done,  cpu clock=  7.00E-01 peak memory=       232 mb
+ init: end setup matrix,  cpu clock=  7.00E-01 peak memory=       232 mb
+ data: data=sweepvt         scrit_pul       =    0.00E+00
+ output: ./sim/1_perturb_vec.ms0
+ sweep: dc dc1    begin, #sweeps= 901 cpu clock=  7.00E-01
+ sweep: dc dc1    end,  cpu clock=  1.71E+00 peak memory=       232 mb
+ data: data=sweepvt_pul     scrit_pul       =    5.31E+00
+ output: ./sim/1_perturb_vec.ms1
+ sweep: dc dc1    begin, #sweeps= 901 cpu clock=  1.71E+00
+ sweep: dc dc1    end,  cpu clock=  2.72E+00 peak memory=       232 mb
+ data: data=sweepvt_pur     scrit_pul       =    0.00E+00
+ output: ./sim/1_perturb_vec.ms2
+ sweep: dc dc1    begin, #sweeps= 901 cpu clock=  2.72E+00
+ sweep: dc dc1    end,  cpu clock=  3.73E+00 peak memory=       232 mb
+ data: data=sweepvt_pgl     scrit_pul       =    0.00E+00
+ output: ./sim/1_perturb_vec.ms3
+ sweep: dc dc1    begin, #sweeps= 901 cpu clock=  3.73E+00
+ sweep: dc dc1    end,  cpu clock=  4.73E+00 peak memory=       232 mb
+ data: data=sweepvt_pgr     scrit_pul       =    0.00E+00
+ output: ./sim/1_perturb_vec.ms4
+ sweep: dc dc1    begin, #sweeps= 901 cpu clock=  4.74E+00
+ sweep: dc dc1    end,  cpu clock=  5.74E+00 peak memory=       232 mb
+ data: data=sweepvt_pdl     scrit_pul       =    0.00E+00
+ output: ./sim/1_perturb_vec.ms5
+ sweep: dc dc1    begin, #sweeps= 901 cpu clock=  5.74E+00
+ sweep: dc dc1    end,  cpu clock=  6.75E+00 peak memory=       232 mb
+ data: data=sweepvt_pdr     scrit_pul       =    0.00E+00
+ output: ./sim/1_perturb_vec.ms6
+ sweep: dc dc1    begin, #sweeps= 901 cpu clock=  6.75E+00
+ sweep: dc dc1    end,  cpu clock=  7.76E+00 peak memory=       232 mb
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)

@@ -1,0 +1,5 @@
+$DATA1 SOURCE='HSPICE' VERSION='K-2015.06-SP1 linux64' PARAM_COUNT=2
+$OPTION MEASFORM=3
+.TITLE '	'smu, vlsisys lab.''
+index,acadm,vflip,p_dvtpul,p_dvtpur,p_dvtpgl,p_dvtpgr,p_dvtpdl,p_dvtpdr,temper,alter#
+1,   7.621860, 1.01886e-08,-3.65852e-02, 6.78525e-02,-4.98552e-02, 3.65623e-02,   0.236281,  -0.103657,  25.000000,1

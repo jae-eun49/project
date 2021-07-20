@@ -1,0 +1,1006 @@
+### Custom WaveView ADV log file, revision L-2016.06-SP1-1 (build Sep 27, ) ###
+### created at 14:41:53 on Thu Jul 15 2021 (Linux AMD64) ###
+### Host Name: vlsisys2   User ID: woong   PID: 121577   ###
+wv_start_log
+# (0) running in waveview only mode
+# (0) SW_SX_PERL_LIB defined
+# (0) SW_SX_TCL_LIB defined
+# (0) HOME defined
+wv_move_window CustomWaveView 0 0
+wv_resize_window CustomWaveView 800 400
+wv_move_window CustomWaveView 1230 60
+wv_move_window CustomWaveView 1579 479
+wv_resize_window CustomWaveView 998 488
+wv_move_window CustomWaveView -7 520
+wv_select_toolbar_item {Import Waveform File}
+wv_move_dialog FileDialog 310 690
+wv_select_dialog FileDialog
+wv_set_text FileDialog.FileName {}
+wv_select_dialog FileDialog
+wv_set_text FileDialog.FileName {}
+wv_close_dialog FileDialog
+wv_select_toolbar_item {Import Waveform File}
+wv_move_dialog FileDialog 310 690
+wv_select_dialog FileDialog
+wv_set_text FileDialog.FileName {}
+wv_select_list_item FileDialog.FileList 0_scrit.sw0
+wv_dclick_list_item FileDialog.FileList 0_scrit.sw0
+wv_select_tree_item MainWindow.hierview {D0:0_scrit.sw0}
+wv_dclick_tree_item MainWindow.hierview {D0:0_scrit.sw0}
+wv_select_tree_item MainWindow.hierview {D0:0_scrit.sw0}
+wv_select_tree_item MainWindow.hierview {D0:0_scrit.sw0/toplevel}
+wv_select_list_item MainWindow.sigview v(q)
+wv_dclick_list_item MainWindow.sigview v(q)
+wv_select_list_item MainWindow.sigview v(qb)
+wv_dclick_list_item MainWindow.sigview v(qb)
+wv_select_wv_item WV1.PANEL2:1.LEGEND
+wv_select_panel WV1.PANEL2:1.LEGEND
+wv_select_wv_item WV1.PANEL2:1.LEGEND
+wv_drag_item_to WV1 53 303
+wv_drag_enter WV1
+wv_drag_to WV1 53 286
+wv_drag_to WV1 53 215
+wv_drag_to WV1 57 141
+wv_drop_on WV1
+wv_drag_item_to WV1 53 295
+wv_select_menu_item {File} {Update Waveform Files}
+wv_move_dialog ReloadFiles 373 779
+wv_select_dialog ReloadFiles
+wv_press_button ReloadFiles.YesAll
+wv_select_list_item MainWindow.sigview i(vcrit)
+wv_select_list_item MainWindow.sigview i(vcrit)
+wv_dclick_list_item MainWindow.sigview i(vcrit)
+wv_select_wv_item WV1.PANEL2:1.LEGEND
+wv_select_panel WV1.PANEL2:1.LEGEND
+wv_waveview_context_menu WV1.PANEL2:1.LEGEND
+wv_waveview_context_menu WV1.PANEL2:1.LEGEND
+wv_waveview_context_menu WV1.PANEL2:1.LEGEND
+wv_select_menu_item {Tools} {Equation Builder ...}
+wv_select_tab UCD.CalTab 0
+wv_select_tab UCD.FTTab 0
+wv_select_tab UCD.MSTab 0
+wv_move_dialog EquationBuilder 1268 121
+wv_select_dialog EquationBuilder
+wv_resize_dialog EquationBuilder 626 300
+wv_move_dialog EquationBuilder 1268 121
+wv_press_button EquationBuilder.Close
+wv_select_toolbar_item {Equation Builder}
+wv_select_tab UCD.CalTab 0
+wv_select_tab UCD.FTTab 0
+wv_select_tab UCD.MSTab 0
+wv_move_dialog EquationBuilder 1290 143
+wv_select_dialog EquationBuilder
+wv_resize_dialog EquationBuilder 626 300
+wv_move_dialog EquationBuilder 1290 143
+wv_select_table_item EquationBuilder.CalStack 0 0
+wv_dclick_table_item EquationBuilder.CalStack 0 0
+wv_edit_table_item EquationBuilder.CalStack 0 0 {inv}
+wv_select_table_item EquationBuilder.CalStack 0 1
+wv_move_dialog UCD 1387 242
+wv_move_dialog UCD 1398 274
+wv_select_dialog UCD
+wv_select_dialog EquationBuilder
+wv_move_dialog UCD 1387 242
+wv_select_tab UCD.FTTab 2
+wv_horz_scroll UCD.WfmFct 256
+wv_horz_scroll UCD.WfmFct 256
+wv_select_list_item UCD.WfmFct x_at_y
+wv_horz_scroll UCD.WfmFct 0
+wv_select_list_item UCD.WfmFct func
+wv_set_text EquationBuilder.edit {}
+wv_select_wv_item WV1.PANEL2:1.LEGEND
+wv_drag_item_to WV1 42 247
+wv_drag_enter WV1
+wv_drag_to WV1 121 215
+wv_drag_to WV1 423 133
+wv_drag_leave WV1
+wv_drop_text UCD.Arg2
+wv_drag_item_to WV1 47 244
+wv_select_wv_item WV1.PANEL1:1.LEGEND
+wv_select_panel WV1.PANEL1:1.LEGEND
+wv_waveview_context_menu WV1.PANEL1:1.LEGEND
+wv_select_context_menu_item {Ungroup}
+wv_select_wv_item WV1.PANEL1:1.LEGEND
+wv_select_panel WV1.PANEL1:1.LEGEND
+wv_select_wv_item WV1.PANEL1:1.LEGEND
+wv_drag_item_to WV1 37 114
+wv_drag_enter WV1
+wv_drag_to WV1 57 109
+wv_drag_to WV1 239 60
+wv_drag_leave WV1
+wv_drop_text UCD.Arg1
+wv_drag_item_to WV1 44 113
+wv_select_dialog UCD
+wv_set_text UCD.Arg1 {0|v(q)}
+wv_set_text UCD.Arg2 {0|-i(vcrit)}
+wv_press_button UCD.Add
+wv_select_dialog EquationBuilder
+wv_press_button UCD.OK
+wv_select_dialog EquationBuilder
+wv_select_table_item EquationBuilder.CalStack 0 1
+wv_move_dialog UCD 1387 242
+wv_move_dialog UCD 167 620
+wv_select_dialog UCD
+wv_select_dialog EquationBuilder
+wv_move_dialog UCD 1387 242
+wv_press_button UCD.Clear
+wv_press_button UCD.Close
+wv_press_button EquationBuilder.Dbtn0
+wv_select_table_item EquationBuilder.CalStack 0 0
+wv_select_table_item EquationBuilder.CalStack 0 1
+wv_move_dialog UCD 1387 242
+wv_move_dialog UCD 167 620
+wv_select_dialog UCD
+wv_select_dialog EquationBuilder
+wv_move_dialog UCD 1387 242
+wv_select_tab UCD.FTTab 4
+wv_select_tab UCD.FTTab 2
+wv_horz_scroll UCD.WfmFct 256
+wv_select_list_item UCD.WfmFct x_at_y
+wv_set_text EquationBuilder.edit {}
+wv_select_wv_item WV1.PANEL1:1.LEGEND
+wv_drag_item_to WV1 29 100
+wv_drag_enter WV1
+wv_drag_to WV1 45 98
+wv_drag_leave WV1
+wv_drop_text UCD.Arg1
+wv_drag_item_to WV1 38 99
+wv_select_wv_item WV1.PANEL3:1.LEGEND
+wv_select_panel WV1.PANEL3:1.LEGEND
+wv_select_wv_item WV1.PANEL3:1.LEGEND
+wv_drag_item_to WV1 37 321
+wv_drag_enter WV1
+wv_drag_to WV1 60 310
+wv_drag_to WV1 234 255
+wv_drag_to WV1 405 221
+wv_drag_leave WV1
+wv_drag_item_to WV1 44 317
+wv_select_wv_item WV1.PANEL3:1.LEGEND
+wv_drag_item_to WV1 43 288
+wv_drag_enter WV1
+wv_drag_to WV1 63 269
+wv_drag_to WV1 173 214
+wv_drag_to WV1 388 136
+wv_drag_leave WV1
+wv_drag_item_to WV1 51 279
+wv_select_dialog UCD
+wv_set_text UCD.Arg1 {}
+wv_select_list_item UCD.WfmFct xval
+wv_select_list_item UCD.WfmFct yvsi
+wv_horz_scroll UCD.WfmFct 256
+wv_horz_scroll UCD.WfmFct 0
+wv_select_list_item UCD.WfmFct func
+wv_set_text UCD.Arg1 {0|v(q)}
+wv_press_button UCD.Add
+wv_select_dialog EquationBuilder
+wv_press_button UCD.OK
+wv_select_dialog EquationBuilder
+wv_select_table_item EquationBuilder.CalStack 0 1
+wv_move_dialog UCD 1387 242
+wv_move_dialog UCD 167 620
+wv_select_dialog UCD
+wv_select_dialog EquationBuilder
+wv_move_dialog UCD 1387 242
+wv_select_dialog UCD
+wv_set_text EquationBuilder.edit {func('0|v(q)','0|-i(vcrit)')}
+wv_set_text UCD.Arg2 {-0|i(vcrit)}
+wv_press_button UCD.OK
+wv_select_dialog EquationBuilder
+wv_select_dialog EquationBuilder
+wv_select_table_item EquationBuilder.CalStack 0 1
+wv_move_dialog UCD 1387 242
+wv_select_dialog UCD
+wv_select_dialog EquationBuilder
+wv_select_dialog UCD
+wv_set_text EquationBuilder.edit {func('0|v(q)','0|-i(vcrit)')}
+wv_set_text UCD.Arg2 {0|i(vcrit)}
+wv_press_button UCD.OK
+wv_select_dialog EquationBuilder
+wv_select_dialog EquationBuilder
+wv_select_table_item EquationBuilder.CalStack 0 1
+wv_move_dialog UCD 1387 242
+wv_move_dialog UCD 167 620
+wv_select_dialog UCD
+wv_select_dialog EquationBuilder
+wv_move_dialog UCD 1387 242
+wv_select_dialog UCD
+wv_set_text EquationBuilder.edit {func('0|v(q)','0|-i(vcrit)')}
+wv_press_button UCD.Add
+wv_select_dialog EquationBuilder
+wv_press_button UCD.Clear
+wv_press_button UCD.Add
+wv_press_button UCD.OK
+wv_select_tree_item MainWindow.hierview {D0:0_scrit.sw0/Equations}
+wv_dclick_tree_item MainWindow.hierview {D0:0_scrit.sw0/Equations}
+wv_select_tree_item MainWindow.hierview {D0:0_scrit.sw0/Equations}
+wv_drag_tree_item MainWindow.hierview {D0:0_scrit.sw0/Equations}
+wv_drag_enter WV1
+wv_drag_to WV1 10 261
+wv_drag_to WV1 20 280
+wv_drag_to WV1 32 333
+wv_drop_on WV1
+#Signal func(0|v(q),0|i(vcrit)) has non-monotonic X values.
+wv_select_wv_item WV1.PANEL4:1.LEGEND
+wv_select_panel WV1.PANEL4:1.LEGEND
+wv_press_key Delete
+wv_move_dialog Confirmation 425 787
+wv_select_dialog Confirmation
+wv_press_button Confirmation.Ok
+wv_select_dialog EquationBuilder
+wv_press_button EquationBuilder.Close
+wv_expand_tree_item MainWindow.hierview {D0:0_scrit.sw0/toplevel}
+wv_select_tree_item MainWindow.hierview {D0:0_scrit.sw0/toplevel}
+wv_select_tree_item MainWindow.hierview {D0:0_scrit.sw0/Equations}
+wv_select_tree_item MainWindow.hierview {D0:0_scrit.sw0}
+wv_select_tree_item MainWindow.hierview {D0:0_scrit.sw0/toplevel}
+wv_select_list_item MainWindow.sigview i(vcrit)
+wv_sigview_context_menu i(vcrit)
+wv_waveview_context_menu WV1.PANEL3:1.LEGEND
+wv_select_wv_item WV1.PANEL3:1.LEGEND
+wv_drag_item_to WV1 55 300
+wv_select_panel WV1.PANEL3:1.LEGEND
+wv_select_toolbar_item {Equation Builder}
+wv_select_tab UCD.CalTab 0
+wv_select_tab UCD.FTTab 0
+wv_select_tab UCD.MSTab 0
+wv_move_dialog EquationBuilder 1320 173
+wv_select_dialog EquationBuilder
+wv_resize_dialog EquationBuilder 626 300
+wv_move_dialog EquationBuilder 1320 173
+wv_select_table_item EquationBuilder.CalStack 0 1
+wv_move_dialog UCD 1417 272
+wv_select_dialog UCD
+wv_select_dialog EquationBuilder
+wv_select_tab UCD.FTTab 2
+wv_select_tab UCD.FTTab 0
+wv_select_tab UCD.FTTab 1
+wv_horz_scroll UCD.MeasFct 375
+wv_select_list_item UCD.MeasFct yvalue
+wv_horz_scroll UCD.MeasFct 0
+wv_horz_scroll UCD.MeasFct 0
+wv_select_tab UCD.FTTab 2
+wv_horz_scroll UCD.WfmFct 256
+wv_select_list_item UCD.WfmFct yvsi
+wv_set_text EquationBuilder.edit {func('0|v(q)','0|i(vcrit)')}
+wv_select_wv_item WV1.PANEL3:1.LEGEND
+wv_drag_item_to WV1 66 295
+wv_drag_enter WV1
+wv_drag_to WV1 90 278
+wv_drag_to WV1 206 207
+wv_drag_to WV1 304 157
+wv_drag_leave WV1
+wv_drop_text UCD.Arg1
+wv_drag_item_to WV1 66 295
+wv_select_dialog UCD
+wv_press_button UCD.OK
+wv_select_tree_item MainWindow.hierview {D0:0_scrit.sw0/Equations}
+wv_dclick_tree_item MainWindow.hierview {D0:0_scrit.sw0/Equations}
+wv_select_tree_item MainWindow.hierview {D0:0_scrit.sw0/Equations}
+wv_drag_tree_item MainWindow.hierview {D0:0_scrit.sw0/Equations}
+wv_drag_enter WV1
+wv_drag_to WV1 30 280
+wv_drag_to WV1 57 331
+wv_drop_on WV1
+#Signal func(0|v(q),0|i(vcrit)) has non-monotonic X values.
+wv_select_wv_item WV1.PANEL4:1.LEGEND
+wv_select_panel WV1.PANEL4:1.LEGEND
+wv_press_key Delete
+wv_move_dialog Confirmation 425 787
+wv_select_dialog Confirmation
+wv_press_button Confirmation.Ok
+wv_select_dialog EquationBuilder
+wv_select_table_item EquationBuilder.CalStack 0 1
+wv_move_dialog UCD 1417 272
+wv_move_dialog UCD 167 620
+wv_select_dialog UCD
+wv_select_dialog EquationBuilder
+wv_move_dialog UCD 1417 272
+wv_select_list_item UCD.WfmFct x_at_y
+wv_horz_scroll UCD.WfmFct 0
+wv_select_list_item UCD.WfmFct func
+wv_press_button UCD.Add
+wv_press_button UCD.Clear
+wv_press_button UCD.OK
+wv_select_dialog EquationBuilder
+wv_select_table_item EquationBuilder.CalStack 0 1
+wv_move_dialog UCD 1417 272
+wv_move_dialog UCD 167 620
+wv_select_dialog UCD
+wv_select_dialog EquationBuilder
+wv_move_dialog UCD 1417 272
+wv_press_button UCD.Clear
+wv_press_button UCD.Clear
+wv_press_button EquationBuilder.Close
+wv_select_wv_item WV1.PANEL3:1.LEGEND
+wv_select_panel WV1.PANEL3:1.LEGEND
+wv_waveview_context_menu WV1.PANEL3:1.LEGEND
+wv_waveview_context_menu WV1.PANEL3:1.LEGEND
+wv_select_context_menu_item {Attributes...}
+wv_move_dialog PanelAttributesDialog 1350 203
+wv_select_dialog PanelAttributesDialog
+wv_press_button PanelAttributesDialog.Fit
+wv_press_button PanelAttributesDialog.Fit
+wv_press_button PanelAttributesDialog.Close
+wv_select_panel WV1.PANEL3:1 0.308571 2.06229e-05
+wv_press_key X
+wv_select_wv_item WV1.PANEL3:1.LEGEND
+wv_select_panel WV1.PANEL3:1.LEGEND
+wv_press_key F
+wv_select_wv_item WV1.PANEL3:1.LEGEND
+wv_select_panel WV1.PANEL3:1.LEGEND
+wv_select_wv_item WV1.PANEL3:1.LEGEND
+wv_select_panel WV1.PANEL3:1.LEGEND
+wv_dclick_wv_item WV1.PANEL3:1.LEGEND
+wv_release_wv_item WV1 51 121
+wv_move_dialog PanelAttributesDialog 1380 233
+wv_select_dialog PanelAttributesDialog
+wv_close_dialog PanelAttributesDialog
+wv_select_wv_item WV1.PANEL3:1.LEGEND
+wv_select_panel WV1.PANEL3:1.LEGEND
+wv_waveview_context_menu WV1.PANEL3:1.LEGEND
+wv_select_context_menu_item {Delete Panel}
+wv_move_dialog Confirmation 425 787
+wv_select_dialog Confirmation
+wv_press_button Confirmation.Ok
+wv_select_tree_item MainWindow.hierview {D0:0_scrit.sw0/toplevel/xn0}
+wv_select_tree_item MainWindow.hierview {D0:0_scrit.sw0}
+wv_select_tree_item MainWindow.hierview {D0:0_scrit.sw0/toplevel}
+wv_select_list_item MainWindow.sigview i(vcrit)
+wv_select_menu_item {File} {Update Waveform Files}
+wv_move_dialog ReloadFiles 373 779
+wv_select_dialog ReloadFiles
+wv_press_button ReloadFiles.YesAll
+wv_select_list_item MainWindow.sigview i(vcrit)
+wv_select_list_item MainWindow.sigview i(vcrit)
+wv_dclick_list_item MainWindow.sigview i(vcrit)
+wv_select_wv_item WV1.PANEL3:1.LEGEND
+wv_select_panel WV1.PANEL3:1.LEGEND
+wv_waveview_context_menu WV1.PANEL3:1.LEGEND
+wv_select_toolbar_item {Equation Builder}
+wv_select_tab UCD.CalTab 0
+wv_select_tab UCD.FTTab 0
+wv_select_tab UCD.MSTab 0
+wv_move_dialog EquationBuilder 1410 263
+wv_select_dialog EquationBuilder
+wv_resize_dialog EquationBuilder 626 300
+wv_move_dialog EquationBuilder 1410 263
+wv_select_table_item EquationBuilder.CalStack 0 1
+wv_move_dialog UCD 1507 362
+wv_select_dialog UCD
+wv_select_dialog EquationBuilder
+wv_select_tab UCD.FTTab 4
+wv_select_tab UCD.FTTab 3
+wv_select_tab UCD.FTTab 4
+wv_select_tab UCD.FTTab 3
+wv_select_tab UCD.FTTab 2
+wv_select_table_item EquationBuilder.CalStack 0 1
+wv_move_dialog UCD 1507 362
+wv_select_dialog UCD
+wv_select_dialog EquationBuilder
+wv_select_dialog UCD
+wv_set_text EquationBuilder.edit {func('0|v(q)','0|i(vcrit)')}
+wv_press_button UCD.Clear
+wv_select_tab UCD.FTTab 1
+wv_horz_scroll UCD.MeasFct 375
+wv_select_list_item UCD.MeasFct yvalue
+wv_set_text UCD.Arg1 {}
+wv_select_wv_item WV1.PANEL1:1.LEGEND
+wv_select_panel WV1.PANEL1:1.LEGEND
+wv_select_wv_item WV1.PANEL1:1.LEGEND
+wv_drag_item_to WV1 33 94
+wv_drag_enter WV1
+wv_drag_to WV1 43 92
+wv_drag_leave WV1
+wv_drop_text UCD.Arg1
+wv_drag_item_to WV1 38 92
+wv_select_dialog UCD
+wv_set_text UCD.Arg1 {0|v(q)}
+wv_press_button UCD.Clear
+wv_select_tab UCD.FTTab 2
+wv_horz_scroll UCD.WfmFct 256
+wv_select_list_item UCD.WfmFct x_at_y
+wv_select_wv_item WV1.PANEL1:1.LEGEND
+wv_drag_item_to WV1 60 95
+wv_drag_enter WV1
+wv_drag_to WV1 96 92
+wv_drag_leave WV1
+wv_drop_text UCD.Arg1
+wv_drag_item_to WV1 60 95
+wv_select_wv_item WV1.PANEL3:1.LEGEND
+wv_select_panel WV1.PANEL3:1.LEGEND
+wv_select_wv_item WV1.PANEL3:1.LEGEND
+wv_drag_item_to WV1 45 319
+wv_drag_enter WV1
+wv_drag_to WV1 124 297
+wv_drag_to WV1 411 202
+wv_drag_leave WV1
+wv_drag_item_to WV1 45 319
+wv_select_dialog UCD
+wv_set_text UCD.Arg1 {0|v(q)}
+wv_press_button UCD.Clear
+wv_select_list_item UCD.WfmFct yvsi
+wv_select_wv_item WV1.PANEL1:1.LEGEND
+wv_select_panel WV1.PANEL1:1.LEGEND
+wv_select_wv_item WV1.PANEL1:1.LEGEND
+wv_drag_item_to WV1 26 96
+wv_drag_enter WV1
+wv_drag_to WV1 53 86
+wv_drag_leave WV1
+wv_drag_enter WV1
+wv_drag_to WV1 329 67
+wv_drop_on WV1
+wv_drag_item_to WV1 33 93
+wv_select_dialog UCD
+wv_select_list_item UCD.WfmFct xval
+wv_select_list_item UCD.WfmFct xshift
+wv_select_list_item UCD.WfmFct xscale
+wv_horz_scroll UCD.WfmFct 0
+wv_select_list_item UCD.WfmFct func
+wv_set_text UCD.Arg1 {0|v(q)}
+wv_set_text UCD.Arg2 {0|i(vcrit)}
+wv_press_button UCD.OK
+wv_select_dialog EquationBuilder
+wv_select_dialog EquationBuilder
+wv_select_table_item EquationBuilder.CalStack 0 1
+wv_move_dialog UCD 1507 362
+wv_select_dialog UCD
+wv_select_dialog EquationBuilder
+wv_edit_table_item EquationBuilder.CalStack 0 1 {func('0|v(q)','0|i(vcrivv]\}
+wv_edit_table_item EquationBuilder.CalStack 0 1 {func('0|v(q)','0|i(vcrivv]\}
+wv_select_toolbar_item {Equation Builder}
+wv_select_tab UCD.CalTab 0
+wv_select_tab UCD.FTTab 0
+wv_select_tab UCD.MSTab 0
+wv_move_dialog EquationBuilder 1440 293
+wv_select_dialog EquationBuilder
+wv_resize_dialog EquationBuilder 626 300
+wv_move_dialog EquationBuilder 1440 293
+wv_select_table_item EquationBuilder.CalStack 0 1
+wv_move_dialog UCD 1537 392
+wv_move_dialog UCD 1548 424
+wv_select_dialog UCD
+wv_select_dialog EquationBuilder
+wv_move_dialog UCD 1537 392
+wv_press_button UCD.Clear
+wv_select_tab UCD.FTTab 2
+wv_select_list_item UCD.WfmFct func
+wv_select_tab UCD.CalTab 1
+wv_select_tab UCD.CalTab 2
+wv_select_tab UCD.CalTab 1
+wv_select_tab UCD.MSTab 1
+wv_select_tab UCD.MSTab 2
+wv_select_tab UCD.MSTab 3
+wv_select_tab UCD.MSTab 0
+wv_select_tab UCD.CalTab 0
+wv_press_button UCD.OK
+wv_select_dialog EquationBuilder
+wv_select_table_item EquationBuilder.CalStack 0 1
+wv_move_dialog UCD 1537 392
+wv_move_dialog UCD 167 620
+wv_select_dialog UCD
+wv_select_dialog EquationBuilder
+wv_move_dialog UCD 1537 392
+wv_set_text EquationBuilder.edit {func('v(q)','i(vcrit)')}
+wv_press_key EquationBuilder.edit {Return}
+wv_edit_table_item EquationBuilder.CalStack 0 1 {func('v(q)','i(vcrit)')}
+wv_select_tree_item MainWindow.hierview {D0:0_scrit.sw0/Equations}
+wv_edit_table_item EquationBuilder.CalStack 0 0 {}
+wv_edit_table_item EquationBuilder.CalStack 0 2 {}
+wv_edit_table_item EquationBuilder.CalStack 0 3 {}
+wv_edit_table_item EquationBuilder.CalStack 0 4 {wfm}
+wv_edit_table_item EquationBuilder.CalStack 0 4 {wfm}
+wv_edit_table_item EquationBuilder.CalStack 0 1 {func('v(q)','i(vcrit)')}
+wv_select_tree_item MainWindow.hierview {D0:0_scrit.sw0/Equations}
+wv_select_tree_item MainWindow.hierview {D0:0_scrit.sw0/Equations}
+wv_dclick_tree_item MainWindow.hierview {D0:0_scrit.sw0/Equations}
+wv_select_tree_item MainWindow.hierview {D0:0_scrit.sw0/Equations}
+wv_drag_tree_item MainWindow.hierview {D0:0_scrit.sw0/Equations}
+wv_drag_enter WV1
+wv_drag_to WV1 12 246
+wv_drag_to WV1 44 304
+wv_drag_to WV1 64 369
+wv_drop_on WV1
+#Signal func(v(q),i(vcrit)) has non-monotonic X values.
+wv_select_panel WV1.PANEL4:1 0.049848 0.436765
+wv_drag_item_to WV1 159 313
+wv_zoom WV1.PANEL4:1 0.049848 0.436765 -0.0757083 0.251471
+wv_select_panel WV1.PANEL4:1 0.000923825 0.431889
+wv_drag_item_to WV1 484 300
+wv_select_panel WV1.PANEL4:1 -0.00244117 0.395317
+wv_drag_item_to WV1 469 314
+wv_zoom WV1.PANEL4:1 -0.00244117 0.395317 0.0074435 0.388003
+wv_select_panel WV1.PANEL4:1 -0.000219328 0.346556
+wv_drag_item_to WV1 270 334
+wv_zoom WV1.PANEL4:1 -0.000219328 0.346556 0.000376732 0.346556
+wv_select_wv_item WV1.PANEL4:1.LEGEND
+wv_select_panel WV1.PANEL4:1.LEGEND
+wv_press_key Delete
+wv_move_dialog Confirmation 425 787
+wv_select_dialog Confirmation
+wv_press_button Confirmation.Ok
+wv_select_dialog EquationBuilder
+wv_select_table_item EquationBuilder.CalStack 0 1
+wv_move_dialog UCD 1537 392
+wv_move_dialog UCD 167 620
+wv_select_dialog UCD
+wv_select_dialog EquationBuilder
+wv_move_dialog UCD 1537 392
+wv_select_dialog UCD
+wv_set_text EquationBuilder.edit {func('v(q)','i(vcrit)')}
+wv_set_text UCD.Arg2 {0|i(vcrit)}
+wv_press_button UCD.Clear
+wv_set_text UCD.Arg1 {0|v(q)}
+wv_set_text UCD.Arg2 {}
+wv_set_text UCD.Arg1 {}
+wv_select_dialog UCD
+wv_set_text UCD.Arg1 {}
+wv_press_button UCD.Clear
+wv_select_tree_item MainWindow.hierview {D0:0_scrit.sw0/Equations}
+wv_select_tree_item MainWindow.hierview {D0:0_scrit.sw0/Equations}
+wv_select_dialog UCD
+wv_select_dialog EquationBuilder
+wv_select_wv_item WV1.PANEL3:1.LEGEND
+wv_select_panel WV1.PANEL3:1.LEGEND
+wv_select_tree_item MainWindow.hierview {D0:0_scrit.sw0/Equations}
+wv_select_wv_item WV1.PANEL1:1.LEGEND
+wv_select_panel WV1.PANEL1:1.LEGEND
+wv_select_wv_item WV1.PANEL2:1.LEGEND
+wv_select_panel WV1.PANEL2:1.LEGEND
+wv_press_key X
+wv_select_tree_item MainWindow.hierview {D0:0_scrit.sw0/toplevel}
+wv_select_toolbar_item {Equation Builder}
+wv_select_tab UCD.CalTab 0
+wv_select_tab UCD.FTTab 0
+wv_select_tab UCD.MSTab 0
+wv_move_dialog EquationBuilder 1470 323
+wv_select_dialog EquationBuilder
+wv_resize_dialog EquationBuilder 626 300
+wv_move_dialog EquationBuilder 1470 323
+wv_select_table_item EquationBuilder.CalStack 0 1
+wv_move_dialog UCD 1567 422
+wv_move_dialog UCD 1578 454
+wv_select_dialog UCD
+wv_select_dialog EquationBuilder
+wv_move_dialog UCD 1567 422
+wv_press_button UCD.Clear
+wv_select_tab UCD.FTTab 2
+wv_select_list_item UCD.WfmFct func
+wv_press_button UCD.Clear
+wv_press_button UCD.Clear
+wv_press_button EquationBuilder.Dbtn0
+wv_select_table_item EquationBuilder.CalStack 0 1
+wv_move_dialog UCD 1567 422
+wv_move_dialog UCD 167 620
+wv_select_dialog UCD
+wv_select_dialog EquationBuilder
+wv_move_dialog UCD 1567 422
+wv_set_text EquationBuilder.edit {}
+wv_select_wv_item WV1.PANEL1:1.LEGEND
+wv_select_panel WV1.PANEL1:1.LEGEND
+wv_select_wv_item WV1.PANEL1:1.LEGEND
+wv_drag_item_to WV1 56 101
+wv_drag_enter WV1
+wv_drag_to WV1 121 101
+wv_drag_to WV1 723 51
+wv_drag_leave WV1
+wv_drop_text UCD.Arg2
+wv_drag_item_to WV1 56 101
+wv_select_wv_item WV1.PANEL3:1.LEGEND
+wv_select_panel WV1.PANEL3:1.LEGEND
+wv_select_wv_item WV1.PANEL3:1.LEGEND
+wv_drag_item_to WV1 53 311
+wv_drag_enter WV1
+wv_drag_to WV1 116 292
+wv_drag_to WV1 382 230
+wv_drag_to WV1 569 189
+wv_drag_leave WV1
+wv_drop_text UCD.Arg1
+wv_drag_item_to WV1 53 311
+wv_select_dialog UCD
+wv_set_text UCD.Arg1 {0|i(vcrit)}
+wv_press_button UCD.OK
+wv_select_dialog EquationBuilder
+wv_select_dialog EquationBuilder
+wv_select_table_item EquationBuilder.CalStack 0 1
+wv_move_dialog UCD 1567 422
+wv_move_dialog UCD 167 620
+wv_select_dialog UCD
+wv_select_dialog EquationBuilder
+wv_move_dialog UCD 1567 422
+wv_press_button UCD.Add
+wv_press_button UCD.OK
+wv_select_wv_item WV1.PANEL4:1.LEGEND
+wv_select_panel WV1.PANEL4:1.LEGEND
+wv_select_dialog EquationBuilder
+wv_select_table_item EquationBuilder.CalStack 0 1
+wv_move_dialog UCD 1567 422
+wv_move_dialog UCD 167 620
+wv_select_dialog UCD
+wv_select_dialog EquationBuilder
+wv_move_dialog UCD 1567 422
+wv_set_text EquationBuilder.edit {func('0|i(-vcrit)','0|v(q)')}
+wv_press_key EquationBuilder.edit {Return}
+wv_edit_table_item EquationBuilder.CalStack 0 1 {func('0|i(-vcrit)','0|v(q)')}
+#'"0|i(-vcrit)"' undefined in equation
+wv_select_dialog EquationBuilder
+wv_select_table_item EquationBuilder.CalStack 0 1
+wv_move_dialog UCD 1567 422
+wv_move_dialog UCD 167 620
+wv_select_dialog UCD
+wv_select_dialog EquationBuilder
+wv_move_dialog UCD 1567 422
+wv_set_text EquationBuilder.edit {func('0|-i(vcrit)','0|v(q)')}
+wv_press_key EquationBuilder.edit {Return}
+wv_edit_table_item EquationBuilder.CalStack 0 1 {func('0|-i(vcrit)','0|v(q)')}
+#'"0|-i(vcrit)"' undefined in equation
+wv_select_dialog EquationBuilder
+wv_select_table_item EquationBuilder.CalStack 0 1
+wv_move_dialog UCD 1567 422
+wv_select_dialog UCD
+wv_select_dialog EquationBuilder
+wv_set_text EquationBuilder.edit {func('-1*i(vcrit)','0|v(q)')}
+wv_press_key EquationBuilder.edit {Return}
+wv_edit_table_item EquationBuilder.CalStack 0 1 {func('-1*i(vcrit)','0|v(q)')}
+#'"-1*i(vcrit)"' undefined in equation
+wv_select_dialog EquationBuilder
+wv_select_table_item EquationBuilder.CalStack 0 1
+wv_move_dialog UCD 1567 422
+wv_select_dialog UCD
+wv_select_dialog EquationBuilder
+wv_select_dialog UCD
+wv_set_text EquationBuilder.edit {func('i(vcrit)','0|v(q)')}
+wv_select_tab UCD.FTTab 0
+wv_select_tab UCD.FTTab 1
+wv_select_tab UCD.FTTab 2
+wv_horz_scroll UCD.WfmFct 0
+wv_select_list_item UCD.WfmFct clip
+wv_select_list_item UCD.WfmFct clip
+wv_horz_scroll UCD.WfmFct 256
+wv_press_button UCD.Clear
+wv_select_dialog EquationBuilder
+wv_select_wv_item WV1.PANEL4:1.LEGEND
+wv_select_panel WV1.PANEL4:1.LEGEND
+wv_dclick_wv_item WV1.PANEL4:1.LEGEND
+wv_move_dialog PanelAttributesDialog 1500 353
+wv_release_wv_item WV1 43 341
+wv_select_dialog PanelAttributesDialog
+wv_press_button PanelAttributesDialog.Close
+wv_select_wv_item WV1.PANEL4:1.LEGEND
+wv_select_panel WV1.PANEL4:1.LEGEND
+wv_press_key Delete
+wv_move_dialog Confirmation 425 787
+wv_select_dialog Confirmation
+wv_press_button Confirmation.Ok
+wv_select_wv_item WV1.PANEL3:1.LEGEND
+wv_select_panel WV1.PANEL3:1.LEGEND
+wv_move_window CustomWaveView -7 513
+wv_select_toolbar_item {Equation Builder}
+wv_select_tab UCD.CalTab 0
+wv_select_tab UCD.FTTab 0
+wv_select_tab UCD.MSTab 0
+wv_move_dialog EquationBuilder 1538 391
+wv_select_dialog EquationBuilder
+wv_resize_dialog EquationBuilder 626 300
+wv_move_dialog EquationBuilder 1538 391
+wv_select_table_item EquationBuilder.CalStack 0 1
+wv_move_dialog UCD 1635 490
+wv_move_dialog UCD 1646 522
+wv_select_dialog UCD
+wv_select_dialog EquationBuilder
+wv_move_dialog UCD 1635 490
+wv_select_table_item EquationBuilder.CalStack 0 1
+wv_move_dialog UCD 1635 490
+wv_select_dialog UCD
+wv_select_dialog EquationBuilder
+wv_edit_table_item EquationBuilder.CalStack 0 0 {}
+wv_edit_table_item EquationBuilder.CalStack 0 1 {Input macro definition here}
+wv_set_radio EquationBuilder.Macro
+wv_set_radio EquationBuilder.Calc
+wv_select_table_item EquationBuilder.CalStack 0 1
+wv_move_dialog UCD 1635 490
+wv_move_dialog UCD 167 613
+wv_select_dialog UCD
+wv_select_dialog EquationBuilder
+wv_move_dialog UCD 1635 490
+wv_select_dialog UCD
+wv_set_text EquationBuilder.edit {func('i(vcrit)','0|v(q)')}
+wv_select_tab UCD.FTTab 4
+wv_select_tab UCD.FTTab 3
+wv_select_tab UCD.FTTab 2
+wv_horz_scroll UCD.WfmFct 0
+wv_select_tab UCD.FTTab 1
+wv_horz_scroll UCD.MeasFct 0
+wv_select_tab UCD.FTTab 0
+wv_edit_table_item EquationBuilder.CalStack 0 1 {func('i(vcrit)','0|v(q)')}
+wv_edit_table_item EquationBuilder.CalStack 0 1 {func('i(vcrit)','0|v(q)')}
+wv_select_dialog EquationBuilder
+wv_select_panel WV1.PANEL3:1 0.216303 2.8453e-05
+wv_waveview_context_menu WV1.PANEL3:1.LEGEND
+wv_tree_context_menu MainWindow.hierview {D0:0_scrit.sw0/Equations}
+wv_select_context_menu_item {Close This File}
+wv_move_dialog Confirmation 425 780
+wv_select_dialog Confirmation
+wv_press_button Confirmation.Cancel
+wv_tree_context_menu MainWindow.hierview {D0:0_scrit.sw0/Equations}
+wv_select_context_menu_item {Close Selected Files}
+wv_move_dialog SelectFilesForCloseOrMeasure 377 698
+wv_select_dialog SelectFilesForCloseOrMeasure
+wv_press_button SelectFilesForCloseOrMeasure.Ok
+wv_select_toolbar_item {Import Waveform File}
+wv_move_dialog FileDialog 310 690
+wv_move_dialog FileDialog 310 683
+wv_select_dialog FileDialog
+wv_set_text FileDialog.FileName {0_scrit.sw0}
+wv_select_list_item FileDialog.FileList 0_scrit.sw0
+wv_dclick_list_item FileDialog.FileList 0_scrit.sw0
+wv_select_tree_item MainWindow.hierview {D0:0_scrit.sw0}
+wv_dclick_tree_item MainWindow.hierview {D0:0_scrit.sw0}
+wv_select_tree_item MainWindow.hierview {D0:0_scrit.sw0}
+wv_select_tree_item MainWindow.hierview {D0:0_scrit.sw0/toplevel}
+wv_select_list_item MainWindow.sigview v(q)
+wv_dclick_list_item MainWindow.sigview v(q)
+wv_select_list_item MainWindow.sigview i(vcrit)
+wv_dclick_list_item MainWindow.sigview i(vcrit)
+wv_select_wv_item WV1.PANEL2:1.LEGEND
+wv_select_panel WV1.PANEL2:1.LEGEND
+wv_waveview_context_menu WV1.PANEL2:1.LEGEND
+wv_select_menu_item {Tools} {Drawing Tool ...}
+wv_select_tree_item DrawToolParameters.DrawingItem {Remark Text}
+wv_move_dialog DrawToolParameters 249 691
+wv_select_dialog DrawToolParameters
+wv_move_dialog DrawToolParameters 233 652
+wv_press_button DrawToolParameters.Cancel
+wv_waveview_context_menu WV1.PANEL2:1.LEGEND
+wv_select_menu_item {Tools} {Parametric Plot ...}
+wv_move_dialog ParametricPlot 1568 421
+wv_select_dialog ParametricPlot
+wv_press_button ParametricPlot.Close
+wv_select_toolbar_item {Equation Builder}
+wv_select_tab UCD.CalTab 0
+wv_select_tab UCD.FTTab 0
+wv_select_tab UCD.MSTab 0
+wv_move_dialog EquationBuilder 1590 443
+wv_select_dialog EquationBuilder
+wv_resize_dialog EquationBuilder 626 300
+wv_move_dialog EquationBuilder 1590 443
+wv_select_table_item EquationBuilder.CalStack 0 1
+wv_move_dialog UCD 1687 542
+wv_select_dialog UCD
+wv_select_dialog EquationBuilder
+wv_select_tab UCD.FTTab 2
+wv_select_list_item UCD.WfmFct ift
+wv_select_list_item UCD.WfmFct integral
+wv_select_list_item UCD.WfmFct func
+wv_press_button UCD.OK
+wv_select_dialog EquationBuilder
+wv_select_table_item EquationBuilder.CalStack 0 1
+wv_move_dialog UCD 1687 542
+wv_move_dialog UCD 167 613
+wv_select_dialog UCD
+wv_select_dialog EquationBuilder
+wv_move_dialog UCD 1687 542
+wv_press_button UCD.Add
+wv_press_button UCD.OK
+wv_select_wv_item WV1.PANEL3:1.LEGEND
+wv_select_panel WV1.PANEL3:1.LEGEND
+wv_select_dialog EquationBuilder
+wv_select_table_item EquationBuilder.CalStack 0 1
+wv_move_dialog UCD 1687 542
+wv_move_dialog UCD 167 613
+wv_select_dialog UCD
+wv_select_dialog EquationBuilder
+wv_move_dialog UCD 1687 542
+wv_select_dialog UCD
+wv_set_text EquationBuilder.edit {func('0|i(vcrit)','0|v(q)')}
+wv_set_text UCD.Arg1 {0|i(vcrit)}
+wv_press_button UCD.-
+wv_select_dialog EquationBuilder
+wv_set_text EquationBuilder.edit {-func('0|i(vcrit)','0|v(q)')}
+wv_press_key EquationBuilder.edit {Return}
+wv_edit_table_item EquationBuilder.CalStack 0 1 {-func('0|i(vcrit)','0|v(q)')}
+wv_select_tree_item MainWindow.hierview {D0:0_scrit.sw0/Equations}
+wv_edit_table_item EquationBuilder.CalStack 0 0 {}
+wv_edit_table_item EquationBuilder.CalStack 0 2 {}
+wv_edit_table_item EquationBuilder.CalStack 0 3 {}
+wv_edit_table_item EquationBuilder.CalStack 0 4 {wfm}
+wv_edit_table_item EquationBuilder.CalStack 0 4 {wfm}
+wv_edit_table_item EquationBuilder.CalStack 0 1 {-func('0|i(vcrit)','0|v(q)')}
+wv_select_tree_item MainWindow.hierview {D0:0_scrit.sw0/Equations}
+wv_select_wv_item WV1.PANEL3:1.LEGEND
+wv_drag_item_to WV1 49 297
+wv_drag_enter WV1
+wv_drag_to WV1 49 290
+wv_drag_to WV1 47 261
+wv_drag_to WV1 39 202
+wv_drag_to WV1 38 166
+wv_drop_on WV1
+wv_drag_item_to WV1 49 290
+wv_move_window CustomWaveView -7 258
+wv_resize_window CustomWaveView 998 743
+wv_select_wv_item WV1.PANEL3:1.LEGEND
+wv_select_panel WV1.PANEL3:1.LEGEND
+wv_press_key Delete
+wv_move_dialog Confirmation 425 652
+wv_select_dialog Confirmation
+wv_press_button Confirmation.Ok
+wv_select_dialog EquationBuilder
+wv_press_button EquationBuilder.Close
+wv_select_panel WV1.PANEL2:1 0.405378 2.32596e-05
+wv_close_window CustomWaveView
+wv_move_dialog Confirmation 423 652
+wv_select_dialog Confirmation
+wv_press_button Confirmation.Cancel
+wv_select_panel WV1.PANEL1:1 0.127059 0.208456
+wv_press_key Ctrl_A
+wv_select_wv_item WV1.PANEL1:1.LEGEND
+wv_select_panel WV1.PANEL1:1.LEGEND
+wv_press_key Ctrl_A
+wv_select_menu_item {File} {Update Waveform Files}
+wv_select_panel WV1.PANEL2:1 0.314622 -1.34548e-05
+wv_select_panel WV1.PANEL2:1 0.467395 -2.88081e-05
+wv_press_key Ctrl_A
+wv_move_dialog ReloadFiles 373 644
+wv_select_dialog ReloadFiles
+wv_move_dialog ReloadFiles 357 605
+wv_select_dialog ReloadFiles
+wv_press_button ReloadFiles.YesAll
+wv_select_tree_item MainWindow.hierview {D0:0_scrit.sw0/Equations}
+wv_select_tree_item MainWindow.hierview {D0:0_scrit.sw0/Equations}
+wv_select_tree_item MainWindow.hierview {D0:0_scrit.sw0/toplevel}
+wv_select_tree_item MainWindow.hierview {D0:0_scrit.sw0}
+wv_select_tree_item MainWindow.hierview {D0:0_scrit.sw0/toplevel}
+wv_select_list_item MainWindow.sigview par(-i(vcrit))
+wv_select_list_item MainWindow.sigview par(-i(vcrit))
+wv_dclick_list_item MainWindow.sigview par(-i(vcrit))
+wv_select_panel WV1.PANEL2:1 0.393277 -5.65432e-05
+wv_select_panel WV1.PANEL2:1 0.49916 -6.52438e-05
+wv_select_wv_item WV1.PANEL2:1.LEGEND
+wv_select_panel WV1.PANEL2:1.LEGEND
+wv_select_wv_item WV1.LEGEND.WIDTH
+wv_move_wv_item WV1.PANEL1:1.LEGEND.WIDTH 78
+wv_press_key Ctrl_A
+wv_move_dialog ReloadFiles 373 644
+wv_select_dialog ReloadFiles
+wv_press_button ReloadFiles.YesAll
+wv_select_wv_item WV1.PANEL3:1.LEGEND
+wv_select_panel WV1.PANEL3:1.LEGEND
+wv_press_key Delete
+wv_move_dialog Confirmation 425 652
+wv_select_dialog Confirmation
+wv_press_button Confirmation.Ok
+wv_select_wv_item WV1.PANEL2:1.LEGEND
+wv_select_panel WV1.PANEL2:1.LEGEND
+wv_select_panel WV1.PANEL2:1 0.573411 1.97543e-05
+wv_press_key Ctrl_A
+wv_move_dialog ReloadFiles 373 644
+wv_select_dialog ReloadFiles
+wv_press_button ReloadFiles.YesAll
+wv_select_panel WV1.PANEL2:1 0.412375 2.52622e-05
+wv_select_panel WV1.PANEL2:1 0.641137 -3.48159e-05
+wv_select_panel WV1.PANEL2:1 0.433445 -4.95016e-05
+wv_select_panel WV1.PANEL2:1 0.313043 -4.01562e-05
+wv_press_key Ctrl_A
+wv_move_dialog ReloadFiles 373 644
+wv_select_dialog ReloadFiles
+wv_press_button ReloadFiles.YesAll
+wv_select_panel WV1.PANEL2:1 0.541806 -0.000392776
+wv_select_panel WV1.PANEL2:1 0.317559 -0.000471331
+wv_press_key Ctrl_A
+wv_move_dialog ReloadFiles 373 644
+wv_select_dialog ReloadFiles
+wv_press_button ReloadFiles.YesAll
+wv_select_panel WV1.PANEL2:1 0.41388 -0.000116369
+wv_select_panel WV1.PANEL2:1 0.582441 -7.31461e-05
+wv_move_window CustomWaveView -7 520
+wv_resize_window CustomWaveView 998 488
+wv_select_panel WV1.PANEL1:1 0.406355 4.75862e-07
+wv_select_wv_item WV1.PANEL1:1.LEGEND
+wv_select_panel WV1.PANEL1:1.LEGEND
+wv_select_wv_item WV1.PANEL1:1.LEGEND
+wv_select_panel WV1.PANEL1:1.LEGEND
+wv_select_wv_item WV1.PANEL1:1.LEGEND
+wv_select_panel WV1.PANEL1:1.LEGEND
+wv_press_key Delete
+wv_move_dialog Confirmation 425 787
+wv_select_dialog Confirmation
+wv_press_button Confirmation.Ok
+wv_press_key Ctrl_A
+wv_move_dialog ReloadFiles 373 779
+wv_select_dialog ReloadFiles
+wv_press_button ReloadFiles.YesAll
+wv_select_panel WV1.PANEL1:1 0.362709 -0.000109712
+wv_select_panel WV1.PANEL1:1 0.403344 -9.071e-05
+wv_select_panel WV1.PANEL1:1 0.085786 -9.78359e-05
+wv_move_window CustomWaveView -7 513
+wv_select_panel WV1.PANEL1:1 0.197157 -4.01163e-06
+wv_press_key Ctrl_A
+wv_move_dialog ReloadFiles 373 772
+wv_select_dialog ReloadFiles
+wv_press_button ReloadFiles.YesAll
+wv_select_wv_item WV1.PANEL1:1.LEGEND
+wv_drag_item_to WV1 37 171
+wv_select_panel WV1.PANEL1:1.LEGEND
+wv_press_key Ctrl_A
+wv_move_dialog ReloadFiles 373 772
+wv_select_dialog ReloadFiles
+wv_press_button ReloadFiles.YesAll
+wv_select_list_item MainWindow.sigview v(q)
+wv_dclick_list_item MainWindow.sigview v(q)
+wv_select_list_item MainWindow.sigview v(qb)
+wv_dclick_list_item MainWindow.sigview v(qb)
+wv_select_wv_item WV1.PANEL3:1.LEGEND
+wv_select_panel WV1.PANEL3:1.LEGEND
+wv_select_wv_item WV1.PANEL3:1.LEGEND
+wv_drag_item_to WV1 44 328
+wv_drag_enter WV1
+wv_drag_to WV1 45 304
+wv_drag_to WV1 45 259
+wv_drag_to WV1 48 188
+wv_drop_on WV1
+wv_drag_item_to WV1 45 315
+wv_select_panel WV1.PANEL1:1 0.139967 -7.386e-05
+wv_move_window CustomWaveView 0 513
+wv_select_panel WV1.PANEL2:1 0.466555 0.0372414
+wv_select_panel WV1.PANEL1:1 0.4199 -7.02861e-05
+wv_select_panel WV1.PANEL1:1 0.803679 -9.76858e-05
+wv_select_panel WV1.PANEL1:1 0.4199 -6.55209e-05
+wv_select_wv_item WV1.PANEL1:1.LEGEND
+wv_select_panel WV1.PANEL1:1.LEGEND
+wv_press_key Ctrl_A
+wv_move_dialog ReloadFiles 380 772
+wv_select_dialog ReloadFiles
+wv_press_button ReloadFiles.YesAll
+wv_select_panel WV1.PANEL1:1 0.370234 -3.14251e-06
+wv_select_wv_item {WV1.ICON.add cursor}
+wv_release_wv_item WV1 116 15
+wv_select_wv_item WV1.PANEL1:1.CURSORX1.X
+wv_drag_item_to WV1 421 79
+wv_move_wv_item WV1.PANEL1:1.CURSOR1 412 53
+wv_select_wv_item WV1.PANEL1:1.CURSOR1
+wv_drag_item_to WV1 447 64
+wv_move_wv_item WV1.PANEL1:1.CURSOR1 409 51
+wv_select_panel WV1.PANEL1:1 0.248864 -2.19256e-05
+wv_move_wv_item WV1.PANEL1:1.CURSOR1 340 124
+wv_press_key Ctrl_A
+wv_move_dialog ReloadFiles 380 772
+wv_select_dialog ReloadFiles
+wv_press_button ReloadFiles.YesAll
+wv_select_panel WV1.PANEL1:1 0.376705 6.05802e-05
+wv_move_wv_item WV1.PANEL1:1.CURSOR1 415 49
+wv_select_wv_item WV1.PANEL1:1.CURSOR1
+wv_move_wv_item WV1.PANEL1:1.CURSOR1 409 52
+wv_select_wv_item WV1.PANEL1:1.CURSORX1.X
+wv_move_wv_item WV1.PANEL1:1.CURSOR1 404 50
+wv_select_wv_item WV1.PANEL1:1.LEGEND
+wv_drag_item_to WV1 30 110
+wv_select_panel WV1.PANEL1:1.LEGEND
+wv_select_wv_item WV1.PANEL1:1.LEGEND
+wv_select_panel WV1.PANEL1:1.LEGEND
+wv_press_key Ctrl_A
+wv_move_dialog ReloadFiles 380 772
+wv_select_dialog ReloadFiles
+wv_press_button ReloadFiles.YesAll
+wv_select_panel WV1.PANEL1:1 0.385227 4.78227e-06
+wv_move_wv_item WV1.PANEL1:1.CURSOR1 420 49
+wv_select_panel WV1.PANEL1:1 0.507955 -6.35375e-05
+wv_move_wv_item WV1.PANEL1:1.CURSOR1 492 106
+wv_press_key Ctrl_A
+wv_move_dialog ReloadFiles 380 772
+wv_select_dialog ReloadFiles
+wv_press_button ReloadFiles.YesAll
+wv_select_panel WV1.PANEL1:1 0.386932 -5.95643e-06
+wv_move_wv_item WV1.PANEL1:1.CURSOR1 421 54
+wv_select_wv_item WV1.PANEL1:1.CURSORX1.X
+wv_move_wv_item WV1.PANEL1:1.CURSOR1 417 53
+wv_select_panel WV1.PANEL2:1 0.45 0.422069
+wv_move_wv_item WV1.PANEL2:1.CURSOR1 458 279
+wv_select_wv_item WV1.PANEL2:1.CURSORX1.X
+wv_move_wv_item WV1.PANEL2:1.CURSOR1 459 277
+wv_select_panel WV1.PANEL1:1 0.557386 -0.000139381
+wv_move_wv_item WV1.PANEL1:1.CURSOR1 521 166
+wv_select_panel WV1.PANEL2:1 0.589773 0.633103
+wv_move_wv_item WV1.PANEL2:1.CURSOR1 540 245
+wv_close_window CustomWaveView
+wv_move_dialog Confirmation 430 780
+wv_select_dialog Confirmation
+# wv_press_button Confirmation.Ok

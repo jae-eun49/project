@@ -1,0 +1,83 @@
+
+*pvaI* current limit stacksize=10485760, set new limit stacksize=62914560
+ --------------------------------------------------------
+|                                                        |
+|             Synopsys Unified Verilog-A (pVA)           |
+|                                                        |
+|                 Machine Name: vlsisys2                 |
+| Copyright (c) 2013 Synopsys Inc., All Rights Reserved. |
+|                                                        |
+ --------------------------------------------------------
+
+libepva built by pvamgr synmake_pva_build  on Tue Aug 11 13:19:23 PDT 2015 - p4:3640064
+HSP_HOME:   /tools/synopsys/HSPICE/K-2015.06-SP1/hspice
+HSP_ARCH:   linux64
+HSP_GCC :   /tools/synopsys/HSPICE/K-2015.06-SP1/hspice/GNU/linux64/gcc-4.8.3/bin/gcc -m64 
+HSP_GCC_VER:   4.8.3
+Working-Dir: /home/woong/test
+Args:        -p hsp -t spi -f ./sim/0_scrit.pvadir/pvaHDL.lis -o ./sim/0_scrit.pvadir 
+
+### optimize mode ###
+Args: pva -p hsp -t spi -f ./sim/0_scrit.pvadir/pvaHDL.lis -o ./sim/0_scrit.pvadir
+
+Begin of pVA compiling on Mon Jul 19 14:17:37 2021	GTM/In-use: 0.6250/0.5998 MB
+
+Parsing '/setup/PDK/S28LPP_2107/FullCustom/LN28LPP_HSPICE_S00-V2.0.1.2/HSPICE/././SEC_FETS/esdnsh_3stk_spe.va'
+Parsing include file '/tools/synopsys/HSPICE/K-2015.06-SP1/hspice/include/constants.vams'
+Parsing include file '/tools/synopsys/HSPICE/K-2015.06-SP1/hspice/include/disciplines.vams'
+Parsing '/setup/PDK/S28LPP_2107/FullCustom/LN28LPP_HSPICE_S00-V2.0.1.2/HSPICE/././SEC_FETS/esdpsh_3stk_spe.va'
+Parsing include file '/tools/synopsys/HSPICE/K-2015.06-SP1/hspice/include/constants.vams'
+Parsing include file '/tools/synopsys/HSPICE/K-2015.06-SP1/hspice/include/disciplines.vams'
+Parsing '/setup/PDK/S28LPP_2107/FullCustom/LN28LPP_HSPICE_S00-V2.0.1.2/HSPICE/././ncap.va'
+Parsing include file '/tools/synopsys/HSPICE/K-2015.06-SP1/hspice/include/constants.vams'
+Parsing include file '/tools/synopsys/HSPICE/K-2015.06-SP1/hspice/include/disciplines.vams'
+Parsing '/setup/PDK/S28LPP_2107/FullCustom/LN28LPP_HSPICE_S00-V2.0.1.2/HSPICE/././egncap.va'
+Parsing include file '/tools/synopsys/HSPICE/K-2015.06-SP1/hspice/include/constants.vams'
+Parsing include file '/tools/synopsys/HSPICE/K-2015.06-SP1/hspice/include/disciplines.vams'
+Parsing '/setup/PDK/S28LPP_2107/FullCustom/LN28LPP_HSPICE_S00-V2.0.1.2/HSPICE/././esd_modules.va'
+Parsing include file '/tools/synopsys/HSPICE/K-2015.06-SP1/hspice/include/constants.vams'
+Parsing include file '/tools/synopsys/HSPICE/K-2015.06-SP1/hspice/include/disciplines.vams'
+Parsing '/setup/PDK/S28LPP_2107/FullCustom/LN28LPP_HSPICE_S00-V2.0.1.2/HSPICE/././esdnsh_spe.va'
+Parsing include file '/tools/synopsys/HSPICE/K-2015.06-SP1/hspice/include/constants.vams'
+Parsing include file '/tools/synopsys/HSPICE/K-2015.06-SP1/hspice/include/disciplines.vams'
+Parsing '/setup/PDK/S28LPP_2107/FullCustom/LN28LPP_HSPICE_S00-V2.0.1.2/HSPICE/././esdpsh_spe.va'
+Parsing include file '/tools/synopsys/HSPICE/K-2015.06-SP1/hspice/include/constants.vams'
+Parsing include file '/tools/synopsys/HSPICE/K-2015.06-SP1/hspice/include/disciplines.vams'
+Parsing '/setup/PDK/S28LPP_2107/FullCustom/LN28LPP_HSPICE_S00-V2.0.1.2/HSPICE/././esdnsh_stk_spe.va'
+Parsing include file '/tools/synopsys/HSPICE/K-2015.06-SP1/hspice/include/constants.vams'
+Parsing include file '/tools/synopsys/HSPICE/K-2015.06-SP1/hspice/include/disciplines.vams'
+Parsing '/setup/PDK/S28LPP_2107/FullCustom/LN28LPP_HSPICE_S00-V2.0.1.2/HSPICE/././esdpsh_stk_spe.va'
+Parsing include file '/tools/synopsys/HSPICE/K-2015.06-SP1/hspice/include/constants.vams'
+Parsing include file '/tools/synopsys/HSPICE/K-2015.06-SP1/hspice/include/disciplines.vams'
+
+End of pVA compiling on Mon Jul 19 14:17:37 2021	GTM/In-use: 4.6250/4.4964 MB
+
+*pvaI* Hierarchical Verilog-A (HVA) instance has been detected: esdnsh_3stk_spe (/setup/PDK/S28LPP_2107/FullCustom/LN28LPP_HSPICE_S00-V2.0.1.2/HSPICE/././SEC_FETS/esdnsh_3stk_spe.va:15)
+*pvaI* spice primitive detected.
+*pvaI* Hierarchical Verilog-A (HVA) instance has been detected: esdpsh_3stk_spe (/setup/PDK/S28LPP_2107/FullCustom/LN28LPP_HSPICE_S00-V2.0.1.2/HSPICE/././SEC_FETS/esdpsh_3stk_spe.va:17)
+*pvaI* Hierarchical Verilog-A (HVA) instance has been detected: esdnsh_spe (/setup/PDK/S28LPP_2107/FullCustom/LN28LPP_HSPICE_S00-V2.0.1.2/HSPICE/././esdnsh_spe.va:16)
+*pvaI* Hierarchical Verilog-A (HVA) instance has been detected: esdpsh_spe (/setup/PDK/S28LPP_2107/FullCustom/LN28LPP_HSPICE_S00-V2.0.1.2/HSPICE/././esdpsh_spe.va:17)
+*pvaI* Hierarchical Verilog-A (HVA) instance has been detected: esdnsh_stk_spe (/setup/PDK/S28LPP_2107/FullCustom/LN28LPP_HSPICE_S00-V2.0.1.2/HSPICE/././esdnsh_stk_spe.va:15)
+*pvaI* Hierarchical Verilog-A (HVA) instance has been detected: esdpsh_stk_spe (/setup/PDK/S28LPP_2107/FullCustom/LN28LPP_HSPICE_S00-V2.0.1.2/HSPICE/././esdpsh_stk_spe.va:16)
+
+End of build pVA DB on Mon Jul 19 14:17:37 2021	GTM/In-use: 18.2500/18.1827 MB
+
+
+./sim/0_scrit.pvadir/pvaRTL_linux64.so is reused
+
+End of pVA elaboration on Mon Jul 19 14:17:37 2021	GTM/In-use: 18.7500/18.6219 MB
+
+
+			pVA malloc          0.759 Mbytes         7379 times
+			pVA calloc         18.372 Mbytes       102578 times
+			pVA realloc         0.203 Mbytes          698 times
+			pVA valloc          0.000 Mbytes            0 times
+			pVA alloca          0.000 Mbytes            0 times
+
+			pVA TOT-MEM        19.335 Mbytes       110655 times
+			pVA free                                 5785 times
+			pVA strdup          0.000 Mbytes            0 times
+
+
+pVA concluded on Mon Jul 19 14:18:19 2021	GTM/In-use: 18.7500/9.1282 MB
+

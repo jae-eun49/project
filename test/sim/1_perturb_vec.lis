@@ -1,0 +1,884 @@
+ ****** HSPICE -- K-2015.06-SP1 linux64 (Aug 23 2015) ******                    
+  Copyright (c) 1986 - 2021 by Synopsys, Inc. All Rights Reserved.              
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: ./sim/1_perturb_vec.sp                                            
+  Command line options: /tools/synopsys/HSPICE/K-2015.06-SP1/hspice/linux64/hspice -i ./sim/1_perturb_vec.sp -o ./sim
+ lic:  
+ lic: FLEXlm: v11.2.1 
+ lic: USER:   woong                HOSTNAME: vlsisys2 
+ lic: HOSTID: ac1f6bdb66c4         PID:      136518 
+ lic: Using FLEXlm license file: 
+ lic: 27000@vlsisys2 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 31-dec-2030/2019.12 
+ lic: NODE LOCKED license on hostid ac1f6bdb66c4 
+ lic:   
+ Init: read install configuration file: /tools/synopsys/HSPICE/K-2015.06-SP1/hspice/meta.cfg
+ **info** *pvaI* current limit stacksize=10485760, set new limit stacksize=62914560
+
+ **info** *pvaI* Hierarchical Verilog-A (HVA) instance has been detected: esdnsh_3stk_spe (/setup/PDK/S28LPP_2107/FullCustom/LN28LPP_HSPICE_S00-V2.0.1.2/HSPICE/././SEC_FETS/esdnsh_3stk_spe.va:15)
+
+ **info** *pvaI* spice primitive detected.
+
+ **info** *pvaI* Hierarchical Verilog-A (HVA) instance has been detected: esdpsh_3stk_spe (/setup/PDK/S28LPP_2107/FullCustom/LN28LPP_HSPICE_S00-V2.0.1.2/HSPICE/././SEC_FETS/esdpsh_3stk_spe.va:17)
+
+ **info** *pvaI* Hierarchical Verilog-A (HVA) instance has been detected: esdnsh_spe (/setup/PDK/S28LPP_2107/FullCustom/LN28LPP_HSPICE_S00-V2.0.1.2/HSPICE/././esdnsh_spe.va:16)
+
+ **info** *pvaI* Hierarchical Verilog-A (HVA) instance has been detected: esdpsh_spe (/setup/PDK/S28LPP_2107/FullCustom/LN28LPP_HSPICE_S00-V2.0.1.2/HSPICE/././esdpsh_spe.va:17)
+
+ **info** *pvaI* Hierarchical Verilog-A (HVA) instance has been detected: esdnsh_stk_spe (/setup/PDK/S28LPP_2107/FullCustom/LN28LPP_HSPICE_S00-V2.0.1.2/HSPICE/././esdnsh_stk_spe.va:15)
+
+ **info** *pvaI* Hierarchical Verilog-A (HVA) instance has been detected: esdpsh_stk_spe (/setup/PDK/S28LPP_2107/FullCustom/LN28LPP_HSPICE_S00-V2.0.1.2/HSPICE/././esdpsh_stk_spe.va:16)
+
+  **warning** (/setup/PDK/S28LPP_2107/FullCustom/LN28LPP_HSPICE_S00-V2.0.1.2/HSPICE/././indstack.inc:148) Global net name, "gnd", in subckt pin list. The pin will be connected to the local net. Recommend to not use global net names in subckt pin lists.
+1****** HSPICE -- K-2015.06-SP1 linux64 (Aug 23 2015) ******                    
+ ******  
+ 	'smu, vlsisys lab.'
+
+ ****** circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 xn3.                            nfet               1.00 
+        2 xn2.                            nfet               1.00 
+        3 xn1.                            nfet               1.00 
+        4 xn0.                            nfet               1.00 
+        5 xp1.                            pfet               1.00 
+        6 xp0.                            pfet               1.00 
+1****** HSPICE -- K-2015.06-SP1 linux64 (Aug 23 2015) ******                    
+ ******  
+ 	'smu, vlsisys lab.'
+
+ ****** mos   model parameters tnom=  25.000 temp=  25.000 ******
+ Model file: /setup/PDK/S28LPP_2107/FullCustom/LN28LPP_HSPICE_S00-V2.0.1.2/HSPICE/./././model_nfet.inc
+ Model line:           13
+ Model Name: nfet 
+ PSP Model(Level69)
+ PSP VERSION 103.1
+ Global Model 
+   TR =     25 C
+   SWIGATE =      1  
+   SWIMPACT =      0  
+   SWGIDL =      1  
+   SWJUNCAP =      3  
+   SWGEO =      1  
+   SWNUD =      2  
+   SWDELVTAC =      0  
+   SWJUNEXP =      1  
+   QMC =      1  
+   LVARO =      0 m
+   LVARL =      0  
+   LVARW =      0  
+   LAP =  1e-09 m
+   WVARO =  4e-09 m
+   WVARL =      0  
+   WVARW =      0  
+   WOT = -7e-09 m
+   DLQ = -1e-08 m
+   DWQ =      0 m
+   VFBO = -0.951 V
+   VFBL = 0.0045  
+   VFBW =      0  
+   VFBLW =      0  
+   STVFBO = 0.0003 V/K
+   STVFBL = 9.3e-06  
+   STVFBW =      0  
+   STVFBLW =  1e-07  
+   TOXO = 1.288e-09 m
+   NSUBO = 9.536e+23 m^-3
+   NSUBW = 6.778e-05  
+   WSEG =  1e-08 m
+   NPCK = 4.64e+22 m^-3
+   NPCKW = 0.1649  
+   WSEGP =  8e-09 m
+   LPCK = 1.584e-09 m
+   LPCKW =      0  
+   FOL1 = 0.01608  
+   FOL2 = 2.131e-05  
+   VNSUBO =      0 V
+   NSLPO =   0.05 V
+   DNSUBO =      0 V^-1
+   DPHIBO = -0.04226 V
+   DPHIBL = -2.971e-09  
+   DPHIBLEXP =  3.971  
+   DPHIBW =      0  
+   DPHIBLW =      0  
+   NPO =  1e+28 m^-3
+   NPL =      0  
+   CTO =   0.11  
+   CTL = 8.05e-05  
+   CTLEXP =    2.2  
+   CTW =      0  
+   CTLW = -0.0002  
+   TOXOVO = 1.288e-09 m
+   LOV = 3.84e-09 m
+   NOVO = 7.5e+26 m^-3
+   CFL = 0.001308 V^-1
+   CFLEXP =  1.208  
+   CFW = -0.02392  
+   CFBO =   0.35 V^-1
+   UO = 0.0275 m^2/V/s
+   FBET1 =   7.95  
+   FBET1W =      0  
+   LP1 = 1.148e-08 m
+   LP1W =      0  
+   FBET2 = -3.011  
+   LP2 = 2.4e-08 m
+   BETW1 =      0  
+   BETW2 =      0  
+   WBET =  1e-09 m
+   STBETO =  1.189  
+   STBETL = -0.015  
+   STBETW =      0  
+   STBETLW =      0  
+   MUEO = 0.3159 m/V
+   MUEW =      0  
+   STMUEO =      0  
+   THEMUO =  1.628  
+   STTHEMUO =      0  
+   CSO =  1.097  
+   CSL =  1.122  
+   CSLEXP = 0.02076  
+   CSW = -2e-12  
+   CSLW =      0  
+   STCSO =      0  
+   XCORO = 0.09977 V^-1
+   XCORL = -0.0208  
+   XCORW =      0  
+   XCORLW =      0  
+   STXCORO =      0  
+   FETAO =  1.851  
+   RSW1 =  42.09 Ohm
+   RSW2 =      0 Ohm
+   STRSO =      0  
+   RSBO =      0 V^-1
+   RSGO =      0 V^-1
+   THESATO =   -0.3 V^-1
+   THESATL =   0.46 V^-1
+   THESATLEXP =   0.84  
+   THESATW =      0  
+   THESATLW = 0.0002  
+   STTHESATO =      0  
+   STTHESATL = 0.0106  
+   STTHESATW =      0  
+   STTHESATLW = -0.0001  
+   THESATBO =   -1.5 V^-1
+   THESATGO =    0.4 V^-1
+   AXO =  5.953  
+   AXL = 0.1442  
+   ALPL = 0.0225  
+   ALPLEXP =  0.018  
+   ALPW =  -0.05  
+   ALP1L1 = 0.0001564 V
+   ALP1LEXP = 0.4904  
+   ALP1L2 = 0.008677  
+   ALP1W =      0  
+   ALP2L1 = 0.02511 V
+   ALP2LEXP = 0.6779  
+   ALP2L2 = 4.506e-05  
+   ALP2W =      0  
+   VPO = 0.008551 V
+   A1O =      1  
+   A1L =      0  
+   A1W =      0  
+   A2O =     10 V
+   STA2O =      0 V
+   A3O =      1  
+   A3L =      0  
+   A3W =      0  
+   A4O =      0 V^-0.5
+   A4L =      0  
+   A4W =      0  
+   GCOO =  1.897  
+   IGINVLW =   0.13 A
+   IGOVW = 0.02322 A
+   STIGO =      0  
+   GC2O =  1.167  
+   GC3O = 3.287e-05  
+   CHIBO =  3.192 V
+   AGIDLW = 2.18e-06 A/V^3
+   BGIDLO =   12.5 V
+   STBGIDLO = -0.0018 V/K
+   CGIDLO = 0.7538  
+   CGBOVL =      0 F
+   CFRW = 8.8e-17 F
+   FNTO =  1.848  
+   NFALW = 2.9e+26 V^-1/m^4
+   NFBLW =  1e+07 V^-1/m^2
+   NFCLW = 1.228e-08 V^-1
+   DTA =      0 K
+   EPSROXO =      5  
+   RINT =      0 Ohm/Sqr
+   RVPOLY =      0 Ohm/Sqr
+   RSHG =      0 Ohm/Sqr
+   SWJUNASYM =      0  
+   TOXOVDO =  2e-09 m
+   LOVD =      0 m
+   NOVDO =  5e+25 m^-3
+   IGOVDW =      0 A
+   AGIDLDW =      0 A/V^3
+   BGIDLDO =     41 V
+   STBGIDLDO =      0 V/K
+   CGIDLDO =      0  
+   CFRDW =      0 F
+   EFO =    0.9  
+   LINTNOI = -7e-09 m
+   ALPNOI =      2  
+   FACNEFFACO =      1  
+   FACNEFFACL =      0  
+   FACNEFFACW =      0  
+   FACNEFFACLW =      0  
+   GFACNUDLEXP =    1.6  
+   GFACNUDO =      1  
+   GFACNUDL = -0.00185  
+   GFACNUDW = -0.018  
+   GFACNUDLW = 0.00075  
+   VSBNUDO =      0 V
+   DVSBNUDO =   0.38 V
+   DELVTACLEXP =      1  
+   DELVTACO =      0 V
+   DELVTACL =      0 V
+   DELVTACW =      0 V
+   DELVTACLW =      0 V
+   RSH =      0 Ohm/Sqr
+   RSHD =      0 Ohm/Sqr
+   Stress Model 
+   SAREF = 1.5e-06 m
+   SBREF = 1.5e-06 m
+   WLOD =      0 m
+   KUO = -4.5e-08 m
+   KVSAT =      0 m
+   TKUO =      0  
+   LKUO =  5e-07 m^LLODKU0
+   WKUO =      0 m^WLODKU0
+   PKUO =      0 m^(LLODKU0+WLODKU0)
+   LLODKUO =      1  
+   WLODKUO =      0  
+   KVTHO = -7.5e-08 Vm
+   LKVTHO =    0.2 m^LLODVTH
+   WKVTHO = 2.5e-05 m^WLODVTH
+   PKVTHO =      0 m^(LLODVTH+WLODVTH)
+   LLODVTH =    0.3  
+   WLODVTH =      1  
+   STK2 =      0 m
+   LODK2 =      1  
+   STETAO =      0 m
+   LODETAO =      1  
+   Well proximity effect Parameters 
+   KVTHOWEO = 4.5e-08  
+   KVTHOWEL =      0  
+   KVTHOWEW =      0  
+   KVTHOWELW =      0  
+   KUOWEO =      0  
+   KUOWEL =      0  
+   KUOWEW =      0  
+   KUOWELW =      0  
+   SCREF = 2.5e-06  
+   WEB =  3e+06  
+   WEC =  1e+06  
+   DLSIL =      0  
+   SWJUNASYM =      0  
+   TOXOVD =  2e-09 m
+   NOVD =  5e+25 m^-3
+   IGOVD =      0 A
+   AGIDLD =      0 A/V^3
+   BGIDLD =     41 V
+   STBGIDLD =      0 V/K
+   CGIDLD =      0  
+   CGOVD =  1e-15 F
+   CFRD =      0 F
+   EF =      1  
+ Juncap2 Model 
+   TRJ =     25 C
+   IMAX =   1000 A
+   CJORBOT = 0.00191 Fm^-2
+   CJORSTI = 8.35e-11 Fm^-1
+   CJORGAT = 2.64e-10 Fm^-1
+   VBIRBOT = 0.8019 V
+   VBIRSTI =   0.68 V
+   VBIRGAT =  0.719 V
+   PBOT = 0.4878  
+   PSTI =    0.9  
+   PGAT = 0.5597  
+   PHIGBOT =   1.12 V
+   PHIGSTI = 0.8815 V
+   PHIGGAT = 0.8598 V
+   IDSATRBOT = 3.6e-07 Am^-2
+   IDSATRSTI =  1e-18 Am^-1
+   IDSATRGAT =  1e-15 Am^-1
+   CSRHBOT = 1.104e+05 Am^-3
+   CSRHSTI = 0.02466 Am^-2
+   CSRHGAT = 0.0509 Am^-2
+   XJUNSTI =  1e-07 m
+   XJUNGAT =  1e-07 m
+   CTATBOT =      0 Am^-3
+   CTATSTI =      0 Am^-2
+   CTATGAT = 0.005012 Am^-2
+   MEFFTATBOT =   0.25  
+   MEFFTATSTI =   0.25  
+   MEFFTATGAT =    0.1  
+   CBBTBOT =      0 AV^-3
+   CBBTSTI =      0 AV^-3m
+   CBBTGAT =  1e-16 AV^-3m
+   FBBTRBOT =  1e+09 Vm^-1
+   FBBTRSTI =  1e+09 Vm^-1
+   FBBTRGAT = 7.439e+08 Vm^-1
+   STFBBTBOT = -0.001 K^-1
+   STFBBTSTI = -0.001 K^-1
+   STFBBTGAT = -0.001 K^-1
+   VBRBOT =     10 V
+   VBRSTI =     10 V
+   VBRGAT =     10 V
+   PBRBOT =      4 V
+   PBRSTI =      4 V
+   PBRGAT =      4 V
+   CJORBOTD =  0.001 Fm^-2
+   CJORSTID =  1e-09 Fm^-1
+   CJORGATD =  1e-09 Fm^-1
+   VBIRBOTD =      1 V
+   VBIRSTID =      1 V
+   VBIRGATD =      1 V
+   PBOTD =    0.5  
+   PSTID =    0.5  
+   PGATD =    0.5  
+   PHIGBOTD =   1.16 V
+   PHIGSTID =   1.16 V
+   PHIGGATD =   1.16 V
+   IDSATRBOTD =  1e-12 Am^-2
+   IDSATRSTID =  1e-18 Am^-1
+   IDSATRGATD =  1e-18 Am^-1
+   CSRHBOTD =    100 Am^-3
+   CSRHSTID = 0.0001 Am^-2
+   CSRHGATD = 0.0001 Am^-2
+   XJUNSTID =  1e-07 m
+   XJUNGATD =  1e-07 m
+   CTATBOTD =    100 Am^-3
+   CTATSTID = 0.0001 Am^-2
+   CTATGATD = 0.0001 Am^-2
+   MEFFTATBOTD =   0.25  
+   MEFFTATSTID =   0.25  
+   MEFFTATGATD =   0.25  
+   CBBTBOTD =  1e-12 AV^-3
+   CBBTSTID =  1e-18 AV^-3m
+   CBBTGATD =  1e-18 AV^-3m
+   FBBTRBOTD =  1e+09 Vm^-1
+   FBBTRSTID =  1e+09 Vm^-1
+   FBBTRGATD =  1e+09 Vm^-1
+   STFBBTBOTD = -0.001 K^-1
+   STFBBTSTID = -0.001 K^-1
+   STFBBTGATD = -0.001 K^-1
+   VBRBOTD =     10 V
+   VBRSTID =     10 V
+   VBRGATD =     10 V
+   PBRBOTD =      4 V
+   PBRSTID =      4 V
+   PBRGATD =      4 V
+   VJUNREF =    2.5 V
+   FJUNQ =   0.03  
+   VJUNREFD =    2.5 V
+   FJUNQD =   0.03  
+   SWNQS =      0  
+   MUNQSO =      1  
+   RGO =      0 Ohm
+   RBULKO =      0 Ohm
+   RWELLO =      0 Ohm
+   RJUNSO =      0 Ohm
+   RJUNDO =      0 Ohm
+ Model file: /setup/PDK/S28LPP_2107/FullCustom/LN28LPP_HSPICE_S00-V2.0.1.2/HSPICE/./././model_nfet.inc
+ Model line:           13
+ Model file: /setup/PDK/S28LPP_2107/FullCustom/LN28LPP_HSPICE_S00-V2.0.1.2/HSPICE/./././model_nfet.inc
+ Model line:           13
+ Model file: /setup/PDK/S28LPP_2107/FullCustom/LN28LPP_HSPICE_S00-V2.0.1.2/HSPICE/./././model_nfet.inc
+ Model line:           13
+ Model file: /setup/PDK/S28LPP_2107/FullCustom/LN28LPP_HSPICE_S00-V2.0.1.2/HSPICE/./././model_pfet.inc
+ Model line:           13
+ Model Name: pfet 
+ PSP Model(Level69)
+ PSP VERSION 103.1
+ Global Model 
+   TR =     25 C
+   SWIGATE =      1  
+   SWIMPACT =      0  
+   SWGIDL =      1  
+   SWJUNCAP =      3  
+   SWGEO =      1  
+   SWNUD =      2  
+   SWDELVTAC =      0  
+   SWJUNEXP =      1  
+   QMC =      1  
+   LVARO =      0 m
+   LVARL =      0  
+   LVARW =      0  
+   LAP =  2e-09 m
+   WVARO =  4e-09 m
+   WVARL =      0  
+   WVARW =      0  
+   WOT = -3e-09 m
+   DLQ = -1.064e-08 m
+   DWQ =      0 m
+   VFBO = -0.5097 V
+   VFBL =      0  
+   VFBW = -0.001835  
+   VFBLW =      0  
+   STVFBO = 0.0005184 V/K
+   STVFBL = 5.593e-06  
+   STVFBW =      0  
+   STVFBLW =      0  
+   TOXO = 1.462e-09 m
+   NSUBO = 7.572e+23 m^-3
+   NSUBW =      0  
+   WSEG =  1e-08 m
+   NPCK = 4.85e+23 m^-3
+   NPCKW =      0  
+   WSEGP =  1e-08 m
+   LPCK =  9e-08 m
+   LPCKW =      0  
+   FOL1 = 0.01213  
+   FOL2 = -5.587e-05  
+   VNSUBO =      0 V
+   NSLPO =   0.05 V
+   DNSUBO =      0 V^-1
+   DPHIBO = -0.3267 V
+   DPHIBL = -0.001531  
+   DPHIBLEXP = 0.7806  
+   DPHIBW =      0  
+   DPHIBLW =      0  
+   NPO =  1e+28 m^-3
+   NPL =      0  
+   CTO = 0.09218  
+   CTL = 0.00171  
+   CTLEXP =  1.306  
+   CTW =      0  
+   CTLW = -0.0003358  
+   TOXOVO = 1.392e-09 m
+   LOV = 4.401e-09 m
+   NOVO = 1.475e+25 m^-3
+   CFL = 0.000786 V^-1
+   CFLEXP =  1.171  
+   CFW = -0.02114  
+   CFBO =      0 V^-1
+   UO = 0.0206 m^2/V/s
+   FBET1 =  15.48  
+   FBET1W = 0.00912  
+   LP1 = 7.038e-09 m
+   LP1W =      0  
+   FBET2 = -10.04  
+   LP2 = 1.025e-08 m
+   BETW1 =  0.025  
+   BETW2 =      0  
+   WBET =  1e-09 m
+   STBETO =  1.444  
+   STBETL = 0.00084  
+   STBETW =      0  
+   STBETLW =      0  
+   MUEO =  1.669 m/V
+   MUEW =      0  
+   STMUEO =  1.078  
+   THEMUO = 0.9001  
+   STTHEMUO =  0.134  
+   CSO = 0.1827  
+   CSL =    0.4  
+   CSLEXP = 0.2558  
+   CSW =      0  
+   CSLW =      0  
+   STCSO =    2.3  
+   XCORO = 0.05588 V^-1
+   XCORL =      0  
+   XCORW =      0  
+   XCORLW =      0  
+   STXCORO =      1  
+   FETAO = 0.9214  
+   RSW1 =  126.6 Ohm
+   RSW2 =      0 Ohm
+   STRSO =      0  
+   RSBO =      0 V^-1
+   RSGO =      0 V^-1
+   THESATO =  1.367 V^-1
+   THESATL =  0.366 V^-1
+   THESATLEXP =  1.006  
+   THESATW =      0  
+   THESATLW = -0.0002872  
+   STTHESATO =      1  
+   STTHESATL = 0.0144  
+   STTHESATW =      0  
+   STTHESATLW =      0  
+   THESATBO =      0 V^-1
+   THESATGO = 0.8406 V^-1
+   AXO =  7.568  
+   AXL =   0.02  
+   ALPL = 0.0292  
+   ALPLEXP = 0.2924  
+   ALPW =      0  
+   ALP1L1 = 0.0009454 V
+   ALP1LEXP = 0.8049  
+   ALP1L2 =      0  
+   ALP1W =      0  
+   ALP2L1 = 0.0174 V
+   ALP2LEXP =  1.225  
+   ALP2L2 =      0  
+   ALP2W =      0  
+   VPO =   0.05 V
+   A1O =      1  
+   A1L =      0  
+   A1W =      0  
+   A2O =     10 V
+   STA2O =      0 V
+   A3O =      1  
+   A3L =      0  
+   A3W =      0  
+   A4O =      0 V^-0.5
+   A4L =      0  
+   A4W =      0  
+   GCOO =     10  
+   IGINVLW = 3.388e-05 A
+   IGOVW = 5.097e-07 A
+   STIGO =      2  
+   GC2O =  2.197  
+   GC3O =     -2  
+   CHIBO =  1.428 V
+   AGIDLW = 0.0088 A/V^3
+   BGIDLO =  9.147 V
+   STBGIDLO = -0.001 V/K
+   CGIDLO = 0.1338  
+   CGBOVL =      0 F
+   CFRW =  8e-17 F
+   FNTO =  1.737  
+   NFALW = 6.779e+25 V^-1/m^4
+   NFBLW = 1.78e+09 V^-1/m^2
+   NFCLW = 1.701e-08 V^-1
+   DTA =      0 K
+   EPSROXO =      5  
+   RINT =      0 Ohm/Sqr
+   RVPOLY =      0 Ohm/Sqr
+   RSHG =      0 Ohm/Sqr
+   SWJUNASYM =      0  
+   TOXOVDO =  2e-09 m
+   LOVD =      0 m
+   NOVDO =  5e+25 m^-3
+   IGOVDW =      0 A
+   AGIDLDW =      0 A/V^3
+   BGIDLDO =     41 V
+   STBGIDLDO =      0 V/K
+   CGIDLDO =      0  
+   CFRDW =      0 F
+   EFO =  0.932  
+   LINTNOI = -4e-09 m
+   ALPNOI =      2  
+   FACNEFFACO =      1  
+   FACNEFFACL =      0  
+   FACNEFFACW =      0  
+   FACNEFFACLW =      0  
+   GFACNUDLEXP =    0.1  
+   GFACNUDO =  1.039  
+   GFACNUDL =   -0.1  
+   GFACNUDW = -0.05148  
+   GFACNUDLW = -0.01517  
+   VSBNUDO =      0 V
+   DVSBNUDO =      1 V
+   DELVTACLEXP =      1  
+   DELVTACO =      0 V
+   DELVTACL =      0 V
+   DELVTACW =      0 V
+   DELVTACLW =      0 V
+   RSH =      0 Ohm/Sqr
+   RSHD =      0 Ohm/Sqr
+   Stress Model 
+   SAREF = 1.5e-06 m
+   SBREF = 1.5e-06 m
+   WLOD = -6e-08 m
+   KUO = 3.3e-09 m
+   KVSAT =      0 m
+   TKUO =      0  
+   LKUO =      0 m^LLODKU0
+   WKUO =      0 m^WLODKU0
+   PKUO =      0 m^(LLODKU0+WLODKU0)
+   LLODKUO =      0  
+   WLODKUO =      0  
+   KVTHO = 1.4e-09 Vm
+   LKVTHO =  6e-16 m^LLODVTH
+   WKVTHO =  5e-13 m^WLODVTH
+   PKVTHO =      0 m^(LLODVTH+WLODVTH)
+   LLODVTH =      2  
+   WLODVTH =      2  
+   STK2 =      0 m
+   LODK2 =      1  
+   STETAO =      0 m
+   LODETAO =      1  
+   Well proximity effect Parameters 
+   KVTHOWEO =  5e-08  
+   KVTHOWEL =      0  
+   KVTHOWEW =      0  
+   KVTHOWELW =      0  
+   KUOWEO =      0  
+   KUOWEL =      0  
+   KUOWEW =      0  
+   KUOWELW =      0  
+   SCREF = 2.5e-06  
+   WEB =  3e+06  
+   WEC =  1e+05  
+   DLSIL =      0  
+   SWJUNASYM =      0  
+   TOXOVD =  2e-09 m
+   NOVD =  5e+25 m^-3
+   IGOVD =      0 A
+   AGIDLD =      0 A/V^3
+   BGIDLD =     41 V
+   STBGIDLD =      0 V/K
+   CGIDLD =      0  
+   CGOVD =  1e-15 F
+   CFRD =      0 F
+   EF =      1  
+ Juncap2 Model 
+   TRJ =     25 C
+   IMAX =   1000 A
+   CJORBOT = 0.001455 Fm^-2
+   CJORSTI = 2.151e-11 Fm^-1
+   CJORGAT = 2.81e-10 Fm^-1
+   VBIRBOT =   0.65 V
+   VBIRSTI = 0.5831 V
+   VBIRGAT = 0.8808 V
+   PBOT =    0.3  
+   PSTI =   0.95  
+   PGAT =   0.46  
+   PHIGBOT =   1.16 V
+   PHIGSTI =   1.16 V
+   PHIGGAT =   1.16 V
+   IDSATRBOT =  5e-07 Am^-2
+   IDSATRSTI =  1e-12 Am^-1
+   IDSATRGAT =  1e-12 Am^-1
+   CSRHBOT =  2e+04 Am^-3
+   CSRHSTI =   0.03 Am^-2
+   CSRHGAT =    0.4 Am^-2
+   XJUNSTI =  1e-07 m
+   XJUNGAT =  1e-07 m
+   CTATBOT =      0 Am^-3
+   CTATSTI =      0 Am^-2
+   CTATGAT =      0 Am^-2
+   MEFFTATBOT =   0.25  
+   MEFFTATSTI =   0.25  
+   MEFFTATGAT =   0.25  
+   CBBTBOT =      0 AV^-3
+   CBBTSTI =  9e-23 AV^-3m
+   CBBTGAT =  2e-15 AV^-3m
+   FBBTRBOT =  1e+09 Vm^-1
+   FBBTRSTI =  1e+09 Vm^-1
+   FBBTRGAT =  1e+09 Vm^-1
+   STFBBTBOT = -0.001 K^-1
+   STFBBTSTI = -0.001 K^-1
+   STFBBTGAT = -0.001 K^-1
+   VBRBOT =     10 V
+   VBRSTI =     10 V
+   VBRGAT =     10 V
+   PBRBOT =      4 V
+   PBRSTI =      4 V
+   PBRGAT =      4 V
+   CJORBOTD =  0.001 Fm^-2
+   CJORSTID =  1e-09 Fm^-1
+   CJORGATD =  1e-09 Fm^-1
+   VBIRBOTD =      1 V
+   VBIRSTID =      1 V
+   VBIRGATD =      1 V
+   PBOTD =    0.5  
+   PSTID =    0.5  
+   PGATD =    0.5  
+   PHIGBOTD =   1.16 V
+   PHIGSTID =   1.16 V
+   PHIGGATD =   1.16 V
+   IDSATRBOTD =  1e-12 Am^-2
+   IDSATRSTID =  1e-18 Am^-1
+   IDSATRGATD =  1e-18 Am^-1
+   CSRHBOTD =    100 Am^-3
+   CSRHSTID = 0.0001 Am^-2
+   CSRHGATD = 0.0001 Am^-2
+   XJUNSTID =  1e-07 m
+   XJUNGATD =  1e-07 m
+   CTATBOTD =    100 Am^-3
+   CTATSTID = 0.0001 Am^-2
+   CTATGATD = 0.0001 Am^-2
+   MEFFTATBOTD =   0.25  
+   MEFFTATSTID =   0.25  
+   MEFFTATGATD =   0.25  
+   CBBTBOTD =  1e-12 AV^-3
+   CBBTSTID =  1e-18 AV^-3m
+   CBBTGATD =  1e-18 AV^-3m
+   FBBTRBOTD =  1e+09 Vm^-1
+   FBBTRSTID =  1e+09 Vm^-1
+   FBBTRGATD =  1e+09 Vm^-1
+   STFBBTBOTD = -0.001 K^-1
+   STFBBTSTID = -0.001 K^-1
+   STFBBTGATD = -0.001 K^-1
+   VBRBOTD =     10 V
+   VBRSTID =     10 V
+   VBRGATD =     10 V
+   PBRBOTD =      4 V
+   PBRSTID =      4 V
+   PBRGATD =      4 V
+   VJUNREF =    2.5 V
+   FJUNQ =   0.03  
+   VJUNREFD =    2.5 V
+   FJUNQD =   0.01  
+   SWNQS =      0  
+   MUNQSO =      1  
+   RGO =      0 Ohm
+   RBULKO =      0 Ohm
+   RWELLO =      0 Ohm
+   RJUNSO =      0 Ohm
+   RJUNDO =      0 Ohm
+ Model file: /setup/PDK/S28LPP_2107/FullCustom/LN28LPP_HSPICE_S00-V2.0.1.2/HSPICE/./././model_pfet.inc
+ Model line:           13
+  
+      
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2         
+  Opening plot unit= 15
+ file=./sim/1_perturb_vec.pa0
+
+ ******
+ 	'smu, vlsisys lab.'
+
+ ****** dc transfer curves tnom=  25.000 temp=  25.000 ******
+  *** parameter sweepvt =   0.              ***
+  
+ icrit_normal= 8.095581e-05    at=   0.334000
+             from=   0.            to=   0.450000
+ ******
+ 	'smu, vlsisys lab.'
+
+ ****** dc transfer curves tnom=  25.000 temp=  25.000 ******
+  *** parameter sweepvt_pul =   5.31181       ***
+  
+ icrit_pul= 8.095056e-05    at=   0.334000
+             from=   0.            to=   0.450000
+ slope_pul0= 9.899673e-10
+ ******
+ 	'smu, vlsisys lab.'
+
+ ****** dc transfer curves tnom=  25.000 temp=  25.000 ******
+  *** parameter sweepvt_pur =   0.              ***
+  
+ icrit_pur= 7.372809e-05    at=   0.269000
+             from=   0.            to=   0.450000
+ slope_pur0= 1.360691e-06
+ ******
+ 	'smu, vlsisys lab.'
+
+ ****** dc transfer curves tnom=  25.000 temp=  25.000 ******
+  *** parameter sweepvt_pgl =   0.              ***
+  
+ icrit_pgl= 7.788529e-05    at=   0.346000
+             from=   0.            to=   0.450000
+ slope_pgl0= 5.780565e-07
+ ******
+ 	'smu, vlsisys lab.'
+
+ ****** dc transfer curves tnom=  25.000 temp=  25.000 ******
+  *** parameter sweepvt_pgr =   0.              ***
+  
+ icrit_pgr= 8.095581e-05    at=   0.334000
+             from=   0.            to=   0.450000
+ slope_pgr0= 4.134027e-16
+ ******
+ 	'smu, vlsisys lab.'
+
+ ****** dc transfer curves tnom=  25.000 temp=  25.000 ******
+  *** parameter sweepvt_pdl =   0.              ***
+  
+ icrit_pdl= 3.482274e-05    at=   0.313000
+             from=   0.            to=   0.450000
+ slope_pdl0= 8.685003e-06
+ ******
+ 	'smu, vlsisys lab.'
+
+ ****** dc transfer curves tnom=  25.000 temp=  25.000 ******
+  *** parameter sweepvt_pdr =   0.              ***
+  
+ icrit_pdr= 6.545766e-05    at=   0.240000
+             from=   0.            to=   0.450000
+ slope_pdr0= 2.917679e-06
+ icrit_ref= 8.095581e-05
+ slope_pul= 9.899673e-10
+ slope_pur= 1.360691e-06
+ slope_pgl= 5.780565e-07
+ slope_pgr= 4.134027e-16
+ slope_pdl= 8.685003e-06
+ slope_pdr= 2.917679e-06
+ sumslope= 1.354242e-05
+ sumsqr= 8.612776e-11
+ sqrtsumsqr= 9.280504e-06
+ vecnat=   0.685291
+ vecmp_pul= 1.066717e-04
+ vecmp_pur=   0.146618
+ vecmp_pgl= 6.228718e-02
+ vecmp_pgr= 4.454529e-11
+ vecmp_pdl=   0.935833
+ vecmp_pdr=   0.314388
+ vechybrid_pul=   0.137143
+ vechybrid_pur=   0.254352
+ vechybrid_pgl=   0.186888
+ vechybrid_pgr=   0.137058
+ vechybrid_pdl=   0.885724
+ vechybrid_pdr=   0.388568
+
+          ***** job concluded
+1****** HSPICE -- K-2015.06-SP1 linux64 (Aug 23 2015) ******                    
+ ******  
+ 	'smu, vlsisys lab.'
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+  
+  
+ ******  Machine Information  ******
+ CPU:
+ model name	: Intel(R) Xeon(R) Gold 6226R CPU @ 2.90GHz
+ cpu MHz	: 2901.000
+  
+ OS:
+ Linux version 2.6.32-754.el6.x86_64 (mockbuild@x86-01.bsys.centos.org) (gcc version 4.4.7 20120313 (Red Hat 4.4.7-23) (GCC) ) #1 SMP Tue Jun 19 21:26:04 UTC 2018
+
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :    32
+  Actual Threads Count       :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =       8 # elements   =      18
+  # resistors   =       0 # capacitors =       6 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       6
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =       6 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.00           1           0
+  dc sweep           7.06         901       13085
+  readin             0.22
+  errchk             0.04
+  setup              0.00
+  output             0.00
+
+
+           peak memory used        232.43 megabytes
+           total cpu time            7.32 seconds
+           total elapsed time       17.63 seconds
+           job started at     14:18:19 07/19/2021
+           job ended   at     14:18:36 07/19/2021
+
+
+ lic: Release hspice token(s) 
+ lic: total license checkout elapse time:       10.17(s)
